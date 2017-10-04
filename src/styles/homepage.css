@@ -43,7 +43,7 @@
   display: flex;
   position: relative;
   top: -899px;
-  left: 750px;
+  left: 680px;
 }
 .mission-header-container {
   margin: 202px 0;
@@ -63,4 +63,29 @@
   font-size: 1.5em;
   -webkit-font-smoothing: antialiased;
   font-weight: 600;
+}
+.location-container {
+  height: 128vh;
+  width: 100%;
+}
+.location-block {
+  z-index: 10;
+}
+.location-header-container {
+  margin-top: -73px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+}
+.location-header__text {
+  font-family: "AvantGardeMdITC";
+  z-index: 5;
+  color: white;
+  font-size: 4em;
+}
+.location-body-container {
+  height: 100vh;
+  margin-top: -10px;
+  background-image: url("../assets/secondary-background-tile.png");
 }
