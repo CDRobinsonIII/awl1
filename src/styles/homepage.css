@@ -1,0 +1,66 @@
+.Homepage {
+  height: 100%;
+}
+.banner-container {
+  height: 410px;
+  background-image: url("../assets/hero-home-1.jpg");
+  background-repeat: no-repeat;
+}
+.banner-text-container {
+  position: relative;
+  top: 115px;
+  width: 100%;
+  margin: 0 8%;
+  color: white;
+}
+.banner__text {
+  font-family: "Myriad Pro";
+  font-size: 1em;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.banner__text2 {
+  font-family: "Playfair Display";
+  font-size: 1em;
+  font-weight: normal;
+  font-style: italic;
+}
+.banner__header {
+  padding: 0.5em 0em;
+  font-family: "AvantGardeMdITC";
+  font-size: 4em;
+}
+.mission-container {
+  background-image: url("../assets/mission-block-background.png");
+  height: 710px;
+  background-repeat: no-repeat;
+  color: white;
+}
+.mission-left {
+  width: 100%;
+}
+.mission-wrapper {
+  display: flex;
+  position: relative;
+  top: -899px;
+  left: 750px;
+}
+.mission-header-container {
+  margin: 202px 0;
+  padding: 0 2em 0 0;
+}
+.mission-header__text {
+  font-family: "Myriad Pro";
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.mission-body-container {
+  line-height: 2.5em;
+  margin: 193px 0;
+}
+.mission-body__text {
+  font-family: "Playfair Display";
+  font-size: 1.5em;
+  -webkit-font-smoothing: antialiased;
+  font-weight: 600;
+}
