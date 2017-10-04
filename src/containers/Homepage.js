@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import "../styles/homepage.css";
 import HomePics from "../assets/mission-artwork.png";
 import LocationBlock from "../assets/location-block-background.png";
+import LocationCard from "../components/LocationCard";
 
 class HomePage extends Component {
   render() {
@@ -18,7 +19,7 @@ class HomePage extends Component {
         </div>
         <div className="mission-container">
           <div className="mission-left">
-            <img src={HomePics} />
+            <img className="mission-pics" src={HomePics} />
           </div>
           <div className="mission-wrapper">
             <div className="mission-header-container">
@@ -34,11 +35,12 @@ class HomePage extends Component {
           </div>
         </div>
         <div className="location-container">
-          <img className="location-block" src={LocationBlock} />
           <div className="location-header-container">
             <h1 className="location-header__text">View Locations</h1>
           </div>
-          <div className="location-body-container" />
+          <div className="location-body-container">
+            <LocationCard />
+          </div>
         </div>
       </section>
     );

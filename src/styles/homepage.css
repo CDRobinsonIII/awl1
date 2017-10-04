@@ -7,9 +7,9 @@
   background-repeat: no-repeat;
 }
 .banner-text-container {
+  width: 580px;
   position: relative;
   top: 115px;
-  width: 100%;
   margin: 0 8%;
   color: white;
 }
@@ -31,19 +31,24 @@
   font-size: 4em;
 }
 .mission-container {
-  background-image: url("../assets/mission-block-background.png");
-  height: 710px;
+  background: url("../assets/mission-block-background.png") 0px 0px no-repeat,
+    url("../assets/location-block-background.png") 0px 630px no-repeat;
+  height: 1000px;
   background-repeat: no-repeat;
   color: white;
 }
 .mission-left {
   width: 100%;
 }
+.mission-pics {
+  z-index: 10;
+}
 .mission-wrapper {
+  width: 745px;
   display: flex;
   position: relative;
   top: -899px;
-  left: 680px;
+  right: -680px;
 }
 .mission-header-container {
   margin: 202px 0;
@@ -68,11 +73,8 @@
   height: 128vh;
   width: 100%;
 }
-.location-block {
-  z-index: 10;
-}
 .location-header-container {
-  margin-top: -73px;
+  margin-top: -93px;
   display: flex;
   justify-content: center;
   align-items: center;
