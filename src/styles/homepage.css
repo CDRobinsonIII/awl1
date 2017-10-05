@@ -87,7 +87,19 @@
   font-size: 4em;
 }
 .location-body-container {
-  height: 100vh;
-  margin-top: -10px;
+  flex-direction: column;
+  display: flex;
+  padding-top: 3em;
+  height: 100%;
   background-image: url("../assets/secondary-background-tile.png");
+}
+.location-body__upper {
+  justify-content: center;
+  display: flex;
+  height: 430px;
+}
+.location-body__lower {
+  justify-content: center;
+  display: flex;
+  height: 430px;
 }

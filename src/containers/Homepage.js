@@ -3,6 +3,7 @@ import "../styles/homepage.css";
 import HomePics from "../assets/mission-artwork.png";
 import LocationBlock from "../assets/location-block-background.png";
 import LocationCard from "../components/LocationCard";
+import Bonita from "../assets/bonita.png";
 
 class HomePage extends Component {
   render() {
@@ -39,7 +40,39 @@ class HomePage extends Component {
             <h1 className="location-header__text">View Locations</h1>
           </div>
           <div className="location-body-container">
-            <LocationCard />
+            <div className="location-body__upper">
+              <LocationCard
+                image={Bonita}
+                name="Bonita"
+                address="4510 Bonita Road"
+                city="Bonita, CA 91902"
+                number="(619)-508-1299"
+              />
+              <LocationCard
+                image={Bonita}
+                name="Bonita"
+                address="4510 Bonita Road"
+                city="Bonita, CA 91902"
+                number="(619)-508-1299"
+              />
+            </div>
+            <div className="location-body__lower">
+              {" "}
+              <LocationCard
+                image={Bonita}
+                name="Bonita"
+                address="4510 Bonita Road"
+                city="Bonita, CA 91902"
+                number="(619)-508-1299"
+              />
+              <LocationCard
+                image={Bonita}
+                name="Bonita"
+                address="4510 Bonita Road"
+                city="Bonita, CA 91902"
+                number="(619)-508-1299"
+              />
+            </div>
           </div>
         </div>
       </section>
