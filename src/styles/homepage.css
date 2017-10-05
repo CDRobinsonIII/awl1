@@ -70,7 +70,7 @@
   font-weight: 600;
 }
 .location-container {
-  height: 128vh;
+  height: 153vh;
   width: 100%;
 }
 .location-header-container {
@@ -90,16 +90,12 @@
   flex-direction: column;
   display: flex;
   padding-top: 3em;
-  height: 100%;
+  height: 145vh;
   background-image: url("../assets/secondary-background-tile.png");
 }
-.location-body__upper {
-  justify-content: center;
-  display: flex;
-  height: 430px;
-}
+.location-body__upper,
 .location-body__lower {
   justify-content: center;
   display: flex;
-  height: 430px;
+  height: 480px;
 }

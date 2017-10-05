@@ -1,0 +1,46 @@
+.Footer {
+  background: white;
+  height: 25vh;
+  background-position-x: 962px;
+  background-position-y: 60px;
+  background-image: url("../assets/footer-brush.png");
+  background-repeat: no-repeat;
+}
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  margin: 0 6%;
+}
+.footer-container span {
+  padding-bottom: 3em;
+  font-size: 0.8em;
+  -webkit-font-smoothing: antialiased;
+}
+.footer-icon__container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 60px;
+  padding: 3.5em 0 1em;
+}
+i {
+  font-family: "FontAwesome";
+  color: black;
+}
+.footer-icon__container span {
+}
+.footer-icon__container a {
+  padding: 0 2em 0 0;
+}
+.footer-icon__container a:hover {
+  cursor: pointer;
+}
+.footer-middle {
+  padding: 1em 0;
+}
+.footer-middle span {
+  text-transform: uppercase;
+  padding: 0 4em 0 0;
+  -webkit-font-smoothing: antialiased;
+}
