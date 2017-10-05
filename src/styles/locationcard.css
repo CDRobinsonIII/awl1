@@ -23,6 +23,7 @@
   justify-content: space-evenly;
 }
 .location-name {
+  font-family: "Nexa";
   font-size: 1.5em;
   line-height: 1.5em;
   -webkit-font-smoothing: antialiased;
@@ -40,4 +41,8 @@
   align-items: flex-end;
   width: 50%;
   display: flex;
+}
+.location-right span {
+  font-family: "Nexa";
+  text-transform: uppercase;
 }
