@@ -1,0 +1,55 @@
+.artCampCard {
+  display: flex;
+  margin: 4em 10em;
+}
+.campCard-left {
+  display: flex;
+  flex-direction: column;
+}
+.cardleft-upper {
+  height: 270px;
+}
+.cardleft-upper img {
+  height: 100%;
+}
+.cardleft-lower {
+  display: flex;
+  height: 175px;
+}
+.cardleft-lower img {
+  width: 50%;
+}
+.campCard-right {
+  box-sizing: border-box;
+  margin: 0 2em;
+  color: black;
+}
+.campright-header {
+  margin-top: -10px;
+  padding: 1em 0;
+}
+.campright-header__text {
+  font-size: 2.5em;
+}
+.campright-body {
+}
+.camright-body__text {
+  font-size: 1em;
+  line-height: 1.9em;
+  padding: 0.5em 0px;
+}
+.campright-info {
+  display: flex;
+  flex-direction: column;
+  padding: 1em 0;
+}
+.campright-info span {
+  padding: 0.5em 0em;
+  font-size: 1em;
+}
+.campright-info li {
+  padding: 0.5em 0;
+  font-size: 1em;
+}
+.campright-contacts {
+}

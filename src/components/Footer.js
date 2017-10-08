@@ -22,7 +22,7 @@ export default function Footer() {
         </div>
         <span>
           Designed by Miles Cartwright. Built by Art Longbottom and Niccolo
-          Ortega. All rights reserved with Art with Larisse
+          Ortega. All rights reserved with Art with Larisse.
         </span>
       </div>
     </section>

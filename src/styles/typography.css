@@ -3,9 +3,7 @@
 @font-face {
   font-family: 'Myriad Pro';
   src: url('/fonts/MyriadPro-Regular.eot');
-  src: url('/fonts/MyriadPro-Regular.eot?#iefix') format('embedded-opentype'),
-    url('/fonts/MyriadPro-Regular.woff') format('woff'),
-    url('/fonts/MyriadPro-Regular.ttf') format('truetype');
+  src: url('/fonts/MyriadPro-Regular.eot?#iefix') format('embedded-opentype'), url('/fonts/MyriadPro-Regular.woff') format('woff'), url('/fonts/MyriadPro-Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
@@ -13,9 +11,7 @@
 @font-face {
   font-family: 'Nexa';
   src: url('/fonts/NexaLight.eot');
-  src: url('/fonts/NexaLight.eot?#iefix') format('embedded-opentype'),
-    url('/fonts/NexaLight.woff') format('woff'),
-    url('/fonts/NexaLight.ttf') format('truetype');
+  src: url('/fonts/NexaLight.eot?#iefix') format('embedded-opentype'), url('/fonts/NexaLight.woff') format('woff'), url('/fonts/NexaLight.ttf') format('truetype');
   font-weight: 300;
   font-style: normal;
 }
@@ -23,10 +19,7 @@
 @font-face {
   font-family: 'Playfair Display';
   src: url('/fonts/PlayfairDisplay-Regular.eot');
-  src: url('/fonts/PlayfairDisplay-Regular.eot?#iefix')
-      format('embedded-opentype'),
-    url('/fonts/PlayfairDisplay-Regular.woff') format('woff'),
-    url('/fonts/PlayfairDisplay-Regular.ttf') format('truetype');
+  src: url('/fonts/PlayfairDisplay-Regular.eot?#iefix') format('embedded-opentype'), url('/fonts/PlayfairDisplay-Regular.woff') format('woff'), url('/fonts/PlayfairDisplay-Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
@@ -34,9 +27,7 @@
 @font-face {
   font-family: 'AvantGardeMdITC';
   src: url('/fonts/AvantGardeMdITC-Bold.eot');
-  src: url('/fonts/AvantGardeMdITC-Bold.eot?#iefix') format('embedded-opentype'),
-    url('/fonts/AvantGardeMdITC-Bold.woff') format('woff'),
-    url('/fonts/AvantGardeMdITC-Bold.ttf') format('truetype');
+  src: url('/fonts/AvantGardeMdITC-Bold.eot?#iefix') format('embedded-opentype'), url('/fonts/AvantGardeMdITC-Bold.woff') format('woff'), url('/fonts/AvantGardeMdITC-Bold.ttf') format('truetype');
   font-weight: bold;
   font-style: normal;
 }
@@ -44,9 +35,7 @@
 @font-face {
   font-family: 'SS Social';
   src: url('/fonts/SSSocialRegular.eot');
-  src: url('/fonts/SSSocialRegular.eot?#iefix') format('embedded-opentype'),
-    url('/fonts/SSSocialRegular.woff') format('woff'),
-    url('/fonts/SSSocialRegular.ttf') format('truetype');
+  src: url('/fonts/SSSocialRegular.eot?#iefix') format('embedded-opentype'), url('/fonts/SSSocialRegular.woff') format('woff'), url('/fonts/SSSocialRegular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
@@ -54,9 +43,7 @@
 @font-face {
   font-family: 'SS Standard';
   src: url('/fonts/SSStandard.eot');
-  src: url('/fonts/SSStandard.eot?#iefix') format('embedded-opentype'),
-    url('/fonts/SSStandard.woff') format('woff'),
-    url('/fonts/SSStandard.ttf') format('truetype');
+  src: url('/fonts/SSStandard.eot?#iefix') format('embedded-opentype'), url('/fonts/SSStandard.woff') format('woff'), url('/fonts/SSStandard.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
@@ -64,10 +51,7 @@
 @font-face {
   font-family: 'Playfair Display';
   src: url('/fonts/PlayfairDisplay-Italic.eot');
-  src: url('/fonts/PlayfairDisplay-Italic.eot?#iefix')
-      format('embedded-opentype'),
-    url('/fonts/PlayfairDisplay-Italic.woff') format('woff'),
-    url('/fonts/PlayfairDisplay-Italic.ttf') format('truetype');
+  src: url('/fonts/PlayfairDisplay-Italic.eot?#iefix') format('embedded-opentype'), url('/fonts/PlayfairDisplay-Italic.woff') format('woff'), url('/fonts/PlayfairDisplay-Italic.ttf') format('truetype');
   font-weight: normal;
   font-style: italic;
 }
@@ -75,10 +59,7 @@
 @font-face {
   font-family: 'Playfair Display';
   src: url('/fonts/PlayfairDisplay-BlackItalic.eot');
-  src: url('/fonts/PlayfairDisplay-BlackItalic.eot?#iefix')
-      format('embedded-opentype'),
-    url('/fonts/PlayfairDisplay-BlackItalic.woff') format('woff'),
-    url('/fonts/PlayfairDisplay-BlackItalic.ttf') format('truetype');
+  src: url('/fonts/PlayfairDisplay-BlackItalic.eot?#iefix') format('embedded-opentype'), url('/fonts/PlayfairDisplay-BlackItalic.woff') format('woff'), url('/fonts/PlayfairDisplay-BlackItalic.ttf') format('truetype');
   font-weight: 900;
   font-style: italic;
 }
@@ -86,9 +67,7 @@
 @font-face {
   font-family: 'Nexa';
   src: url('/fonts/NexaBold.eot');
-  src: url('/fonts/NexaBold.eot?#iefix') format('embedded-opentype'),
-    url('/fonts/NexaBold.woff') format('woff'),
-    url('/fonts/NexaBold.ttf') format('truetype');
+  src: url('/fonts/NexaBold.eot?#iefix') format('embedded-opentype'), url('/fonts/NexaBold.woff') format('woff'), url('/fonts/NexaBold.ttf') format('truetype');
   font-weight: bold;
   font-style: normal;
 }
@@ -96,9 +75,7 @@
 @font-face {
   font-family: 'SS Gizmo';
   src: url('/fonts/SSGizmo.eot');
-  src: url('/fonts/SSGizmo.eot?#iefix') format('embedded-opentype'),
-    url('/fonts/SSGizmo.woff') format('woff'),
-    url('/fonts/SSGizmo.ttf') format('truetype');
+  src: url('/fonts/SSGizmo.eot?#iefix') format('embedded-opentype'), url('/fonts/SSGizmo.woff') format('woff'), url('/fonts/SSGizmo.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }

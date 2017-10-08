@@ -1,0 +1,28 @@
+.ArtCamps {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background: white;
+}
+.artCamps-header {
+  height: 300px;
+  /* background-repeat: no-repeat; */
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-family: "AvantGardeMdITC";
+  text-transform: capitalize;
+  font-size: 3em;
+  background-image: url("../assets/bonita.png");
+}
+.artCamps-header__text {
+  -webkit-font-smoothing: antialiased;
+  font-size: 1.5em;
+}
+.artCamps-body {
+  width: 100%;
+  padding: 1em 0;
+}

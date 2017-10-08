@@ -17,8 +17,8 @@ export default function Location(props) {
           </ul>
         </div>
         <div className="location-right">
-          <span>Contact</span>
-          <span>Schedule</span>
+          <span>Contact us</span>
+          <span>Class schedule</span>
         </div>
       </div>
     </div>
