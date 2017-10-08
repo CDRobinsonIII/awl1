@@ -48,12 +48,13 @@
   flex-direction: column;
   width: 100%;
   text-align: -webkit-center;
+  padding-bottom: 2.5em;
 }
 .instructors-block h2 {
   font-family: "Nexa";
   font-size: 2em;
   text-transform: capitalize;
-  padding: 1.5em 0;
+  padding: 0.8em 0;
   -webkit-font-smoothing: antialiased;
 }
 .instructors-body {
@@ -89,18 +90,18 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 2em;
+  padding-top: 4em;
 }
 .giving-block h2 {
   font-family: "Nexa";
-  font-size: 1.5em;
-  padding: 0 0 1em 0;
+  font-size: 2em;
 }
 .giving-body {
   display: flex;
   height: 440px;
   width: 100%;
   justify-content: space-evenly;
+  padding: 5em;
 }
 .community-wrapper,
 .donations-wrapper {
@@ -120,4 +121,6 @@
 .donations-wrapper p {
   font-family: "Nexa";
   -webkit-font-smoothing: antialiased;
+  line-height: 2em;
+  text-align: -webkit-center;
 }
