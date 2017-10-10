@@ -70,6 +70,7 @@
 .discount-header h2 {
 }
 .discount-body {
+  padding-bottom: 4em;
   justify-content: center;
   display: flex;
 }
@@ -110,7 +111,7 @@
   font-weight: 800;
 }
 .supplies-block {
-  height: 20vh;
+  height: 35vh;
   display: flex;
   justify-content: center;
   flex-direction: column;

@@ -1,0 +1,45 @@
+.partyCard-wrapper {
+  font-family: "Nexa";
+  display: flex;
+  margin: 4em 10em;
+  color: white;
+}
+.partyCard-left {
+  display: flex;
+  flex-direction: column;
+}
+.partyleft-upper {
+  height: 270px;
+}
+.partyleft-upper img {
+  height: 100%;
+}
+.partyleft-lower {
+  display: flex;
+  height: 175px;
+}
+.partyleft-lower img {
+  width: 50%;
+}
+.partyCard-right {
+  margin: 0 1em;
+}
+.partyCard-right h2 {
+  padding: 0 0 1em;
+  font-size: 1.5em;
+  text-transform: capitalize;
+  -webkit-font-smoothing: antialiased;
+}
+.partyCard-right p {
+  line-height: 2em;
+  padding-bottom: 1.5em;
+  margin: 0 3em 0 0;
+}
+.partyCard-right ul li {
+  line-height: 3em;
+  text-transform: uppercase;
+  -webkit-font-smoothing: antialiased;
+  font-size: 0.6em;
+  font-weight: 800;
+  letter-spacing: 1px;
+}

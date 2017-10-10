@@ -5,6 +5,7 @@ import Header from "components/Header";
 import Footer from "components/Footer";
 import Homepage from "../containers/Homepage";
 import ArtCamp from "../containers/ArtCamps";
+import ArtParties from "../containers/ArtParties";
 import Tuition from "../containers/Tuition";
 import Location from "../containers/Locations";
 import Classes from "../containers/Classes";
@@ -18,6 +19,7 @@ class App extends Component {
         <Switch>
           <Route exact path="/" component={Homepage} />
           <Route exact path="/camps" component={ArtCamp} />
+          <Route exact path="/parties" component={ArtParties} />
           <Route exact path="/about" component={About} />
           <Route exact path="/classes" component={Classes} />
           <Route exact path="/tuition" component={Tuition} />
