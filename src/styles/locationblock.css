@@ -1,0 +1,36 @@
+.locationBlock-wrapper {
+  width: 100%;
+}
+.locations-tag__container {
+  text-align: center;
+  background-position-y: -9px;
+  height: 332px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  color: white;
+  width: 100%;
+  background-image: url("../assets/location-block-background.png");
+}
+.locations-tag__container h1 {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding-bottom: 1em;
+  font-size: 2em;
+  color: white;
+  -webkit-font-smoothing: antialiased;
+  font-family: "AvantGardeMdITC";
+}
+.locations-body {
+  background-image: url("../assets/secondary-background-tile.png");
+  display: flex;
+  width: 100%;
+  align-items: center;
+  flex-direction: column;
+}
+.location-upper,
+.location-lower {
+  display: flex;
+  padding: 2em 0;
+}
