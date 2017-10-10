@@ -1,0 +1,130 @@
+.Tuition {
+  background: white;
+  color: white;
+  font-family: "Nexa";
+}
+.tuition-container {
+  background: #482548;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.tuition-container h1 {
+  font-size: 2em;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  padding: 1em;
+}
+.tuition-imageWrapper {
+  height: 200px;
+  width: 490px;
+}
+.tuition-imageWrapper img {
+  height: 200px;
+  width: 490px;
+}
+.tuition-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 490px;
+}
+.tuition-body h2 {
+  margin-top: 0.5em;
+  padding: 0.5em;
+  font-size: 1.5em;
+}
+.tuition-body span {
+  line-height: 2em;
+  font-size: 0.8em;
+  padding: 0.5em 0.1em;
+  text-align: -webkit-center;
+}
+.tuition-body span:last-of-type {
+  font-size: 1em;
+  padding: 1em;
+}
+.tuition-body button {
+  padding: 15px 20px;
+  font-family: "Nexa";
+  text-transform: uppercase;
+  font-weight: 900;
+  background: #bd0f0f;
+  color: white;
+  -webkit-font-smoothing: antialiased;
+  margin-bottom: 5em;
+  border: 0px;
+}
+.discount-container {
+  color: black;
+  width: 100%;
+  background: white;
+}
+.discount-header {
+  font-size: 1.5em;
+  display: flex;
+  justify-content: center;
+  padding: 1em;
+  margin-top: 1em;
+}
+.discount-header h2 {
+}
+.discount-body {
+  justify-content: center;
+  display: flex;
+}
+.discount-left {
+  display: flex;
+  flex-direction: column;
+}
+.discount-left,
+.discount-right {
+  width: 350px;
+  margin: 1em;
+}
+.discount-left-trio {
+  text-align: -webkit-center;
+  padding: 0.5em;
+}
+.discount-left-trio h3 {
+  padding: 1em;
+  font-size: 1.2em;
+}
+.discount-left-trio span {
+  line-height: 25px;
+}
+.discount-right {
+  text-align: -webkit-center;
+}
+.discount-right h2 {
+  padding: 1em;
+  text-align: -webkit-center;
+  font-size: 1.2em;
+}
+.discount-right span {
+}
+.little-font {
+  text-transform: uppercase;
+  -webkit-font-smoothing: antialiased;
+  font-size: 0.6em;
+  font-weight: 800;
+}
+.supplies-block {
+  height: 20vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background: #482548;
+  color: white;
+  padding-bottom: 5em;
+}
+.supplies-block h1 {
+  padding: 0.6em;
+  font-size: 1.5em;
+}
+.supplies-block span {
+  margin: 0 25em;
+  text-align: -webkit-center;
+  line-height: 2em;
+}
