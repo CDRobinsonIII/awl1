@@ -28,9 +28,56 @@
   width: 100%;
   align-items: center;
   flex-direction: column;
+  height: 130vh;
 }
 .location-upper,
 .location-lower {
   display: flex;
   padding: 2em 0;
+}
+@media screen and (max-width: 767px) {
+  .location-upper,
+  .location-lower {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    margin: 1em 0;
+    padding: 0;
+  }
+  .locations-body {
+    height: 100%;
+  }
+  .location-card-container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    flex-direction: column;
+  }
+  .location-card {
+    width: 100%;
+  }
+  .location-right span {
+    font-size: 0.8em;
+  }
+  .location-name {
+    font-size: 1.3em;
+  }
+  .card-info {
+    font-size: 0.8em;
+    line-height: 20px;
+  }
+  .locations-tag__container h1 {
+    margin: 1em 0 0;
+    font-size: 1.2em;
+    padding-bottom: 0;
+  }
+  .locations-tag__container {
+    height: 60px;
+
+    background-image: url("../assets/secondary-background-tile.png");
+  }
 }

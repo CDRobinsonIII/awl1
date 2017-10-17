@@ -1,0 +1,33 @@
+.main-carousel {
+  background: #eee;
+  height: 300px;
+  width: 100%;
+}
+.carousel-cell {
+  width: 66%;
+  height: 300px;
+  margin-right: 10px;
+  border-radius: 5px;
+  counter-increment: carousel-cell;
+}
+.carousel-cell:before {
+  display: block;
+  text-align: center;
+  content: counter(carousel-cell);
+  line-height: 300px;
+  font-size: 80px;
+  color: white;
+}
+.flickity-prev-next-button {
+  width: 40px;
+  padding: 10px;
+  position: relative;
+}
+.flickity-prev-next-button.previous {
+  top: -170px;
+  right: -10px;
+}
+.flickity-prev-next-button.next {
+  top: -170px;
+  left: 1325px;
+}

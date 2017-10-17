@@ -1,9 +1,9 @@
-import React, { Component } from 'react'
-import { connect } from 'react-redux'
-import { withRouter, Link } from 'react-router-dom'
-import * as actions from 'actions/header'
-import styled from 'styled-components'
-import logo from 'assets/logo.svg'
+import React, { Component } from "react";
+import { connect } from "react-redux";
+import { withRouter, Link } from "react-router-dom";
+import * as actions from "actions/header";
+import styled from "styled-components";
+import logo from "assets/logo.svg";
 
 const NavWrapper = styled.nav`
   display: flex;
@@ -12,12 +12,12 @@ const NavWrapper = styled.nav`
   background-color: #fff;
   height: 250px;
   padding-top: 50px;
-`
+`;
 const LogoLink = styled(Link)`
   max-width: 470px;
   width: 100%;
-`
-const Logo = styled.img`width: 100%;`
+`;
+const Logo = styled.img`width: 100%;`;
 
 const LinkBar = styled.nav`
   display: flex;
@@ -27,11 +27,26 @@ const LinkBar = styled.nav`
   max-width: 900px;
   white-space: nowrap;
   padding: 0 3%;
-`
+  @media screen and (max-width: 767px) {
+    flex-direction: column;
+    text-align: end;
+    position: absolute;
+    background: white;
+    top: 0px;
+    display: ${props => (props.open ? "block" : "none")};
+  }
+`;
 
+const NavBar = styled.div`
+z-index: 99;
+position: absolute;
+top: 2px;
+right: 11px;
+}
+`;
 const StyledLink = styled(Link)`
   color: #828282;
-  font-family: 'Nexa';
+  font-family: "Nexa";
   font-weight: bold;
   font-size: 13px;
   text-transform: uppercase;
@@ -46,16 +61,46 @@ const StyledLink = styled(Link)`
   &:last-child {
     margin-right: 0;
   }
-`
+`;
 
 class Header extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      open: false
+    };
+    this.toggleMenu = this.toggleMenu.bind(this);
+  }
+  toggleMenu() {
+    const isOpen = this.state.open;
+    this.setState({
+      open: !isOpen
+    });
+  }
   render() {
     return (
       <NavWrapper>
         <LogoLink to="/">
           <Logo src={logo} />
         </LogoLink>
-        <LinkBar>
+        <NavBar>
+          <svg
+            onClick={() => this.toggleMenu()}
+            className="mobile-menu"
+            fill="#000000"
+            height="36"
+            viewBox="0 0 24 24"
+            width="36"
+            xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 0h24v24H0z" fill="none" />
+            <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" />
+          </svg>
+        </NavBar>
+        <LinkBar
+          onClick={() => {
+            this.toggleMenu();
+          }}
+          className={this.state.open ? "open" : "close"}>
           <StyledLink to="/classes">Art Classes</StyledLink>
           <StyledLink to="/locations">Locations</StyledLink>
           <StyledLink to="/camps">Art Camps</StyledLink>
@@ -64,12 +109,12 @@ class Header extends Component {
           <StyledLink to="/about">About Us</StyledLink>
         </LinkBar>
       </NavWrapper>
-    )
+    );
   }
 }
 
 const mapStateToProps = ({ header }) => ({
   open: header.open
-})
+});
 
-export default withRouter(connect(mapStateToProps, actions)(Header))
+export default withRouter(connect(mapStateToProps, actions)(Header));

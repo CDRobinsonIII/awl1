@@ -1,4 +1,5 @@
 .artCampCard {
+  font-family: "Nexa";
   display: flex;
   margin: 4em 10em;
 }
@@ -30,6 +31,8 @@
 }
 .campright-header__text {
   font-size: 2.5em;
+  font-weight: 800;
+  -webkit-font-smoothing: antialiased;
 }
 .campright-body {
 }
@@ -46,10 +49,49 @@
 .campright-info span {
   padding: 0.5em 0em;
   font-size: 1em;
+  font-weight: 600;
 }
 .campright-info li {
   padding: 0.5em 0;
   font-size: 1em;
 }
 .campright-contacts {
+}
+@media screen and (max-width: 767px) {
+  .artCampCard {
+    margin: 0;
+    flex-direction: column-reverse;
+  }
+  .cardleft-upper {
+    height: 170px;
+    width: 320px;
+  }
+  .campCard-left {
+    align-items: center;
+  }
+  .cardleft-lower {
+    width: 320px;
+    height: 100px;
+  }
+  .campCard-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .campright-header__text {
+    font-size: 1.3em;
+    padding-top: 1em;
+  }
+  .campright-body p {
+    text-align: justify;
+    line-height: 1.7em;
+    font-size: 11px;
+  }
+  .campright-info {
+    font-size: 0.8em;
+    width: 100%;
+  }
+  .campright-contacts ul {
+    font-size: 11px;
+  }
 }

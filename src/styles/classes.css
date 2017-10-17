@@ -84,6 +84,7 @@
   -webkit-font-smoothing: antialiased;
   padding: 1.5em;
   text-transform: capitalize;
+  font-weight: 800;
 }
 .classes-body-imageWrapper {
   width: 320px;
@@ -136,4 +137,49 @@
   -webkit-font-smoothing: antialiased;
   width: 100%;
   border: 0px;
+}
+@media screen and (max-width: 767px) {
+  .classes-header h1 {
+    font-size: 1.3em;
+  }
+  .classes-intro-block {
+    padding: 0;
+  }
+  .classes-intro-block h2 {
+    font-size: 1.3em;
+  }
+  .classes-intro-block span {
+    font-size: 0.7em;
+  }
+  .classes-intro-block p {
+    line-height: 1.7em;
+    font-size: 11px;
+    margin: 0 6%;
+  }
+  .classes-header-container h2 {
+    font-size: 1em;
+  }
+  .classes-body {
+    flex-direction: column;
+  }
+  .classes-col img {
+    margin: 0em;
+  }
+  .classes-col {
+    margin: 0;
+  }
+  .classes-col li,
+  .classes-col span {
+    font-size: 11px;
+  }
+  .classes-col p {
+    font-size: 11px;
+    text-align: -webkit-left;
+  }
+  .classes-col button {
+    font-size: 10px;
+  }
+  .classes-col img {
+    padding-bottom: 0.8em;
+  }
 }

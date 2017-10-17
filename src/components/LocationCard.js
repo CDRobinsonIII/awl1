@@ -21,6 +21,9 @@ export default function Location(props) {
           <span>Class schedule</span>
         </div>
       </div>
+      <div className="button-wrapper">
+        <button>Schdule free intro class</button>
+      </div>
     </div>
   );
 }

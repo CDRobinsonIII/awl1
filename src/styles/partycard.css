@@ -25,6 +25,7 @@
   margin: 0 1em;
 }
 .partyCard-right h2 {
+  font-weight: 600;
   padding: 0 0 1em;
   font-size: 1.5em;
   text-transform: capitalize;
@@ -34,6 +35,7 @@
   line-height: 2em;
   padding-bottom: 1.5em;
   margin: 0 3em 0 0;
+  -webkit-font-smoothing: antialiased;
 }
 .partyCard-right ul li {
   line-height: 3em;
@@ -42,4 +44,26 @@
   font-size: 0.6em;
   font-weight: 800;
   letter-spacing: 1px;
+}
+@media screen and (max-width: 767px) {
+  .partyCard-wrapper {
+    flex-direction: column-reverse;
+  }
+  .partyleft-upper {
+    width: 320px;
+    height: 170px;
+  }
+  .partyCard-right p {
+    font-size: 11px;
+    text-align: justify;
+    line-height: 1.7em;
+    margin: 0;
+  }
+  .partyCard-right h2 {
+    text-align: center;
+    font-size: 1.3em;
+  }
+  .partyCard-left {
+    padding-top: 1em;
+  }
 }
