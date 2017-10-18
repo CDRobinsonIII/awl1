@@ -8,19 +8,19 @@ import Santee from "../assets/santee.png";
 const elem = document.querySelector(".main-carousel");
 const flkty = new Flickity(elem, {
   // options
+  wrapAround: true,
   cellAlign: "left",
-  contain: true
+  contain: true,
+  pageDots: false
 });
 
 export default function Carousel() {
   return (
-    <div
-      className="main-carousel"
-      data-flickity="{ &quot;wrapAround&quot;: true }">
-      <img src={Santee} className="carousel-cell" />
-      <img src={Santee} className="carousel-cell" />
-      <img src={Santee} className="carousel-cell" />
-      <img src={Santee} className="carousel-cell" />
+    <div className="carousel" data-flickity="{ &quot;wrapAround&quot;: true }">
+      <div className="carousel-cell" />
+      <div className="carousel-cell" />
+      <div className="carousel-cell" />
+      <div className="carousel-cell" />
     </div>
   );
 }

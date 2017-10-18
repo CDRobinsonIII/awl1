@@ -1,55 +1,91 @@
 import React, { Component } from "react";
-import "../styles/homepage.css";
 import HomePics from "../assets/mission-artwork.png";
-import LocationBlock from "../assets/location-block-background.png";
-import LocationCard from "../components/LocationCard";
-import Carousel from "../components/Carousel";
+import LocationBlock from "../components/LocationBlock";
 import Bonita from "../assets/bonita.png";
 import Lamesa from "../assets/lamesa.png";
 import Santee from "../assets/santee.png";
+import styled from "styled-components";
+import Carousel from "../components/Carousel";
 
+const HomeWrapper = styled.section`
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+`;
+
+const HomeBanner = styled.div`
+  height: 300px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-family: "AvantGardeMdITC";
+  text-transform: capitalize;
+  font-size: 3em;
+  background-image: url(${Bonita});
+`;
+const HomeBannerH1 = styled.h1`
+  font-size: 1.5em;
+  color: white
+  -webkit-font-smoothing: antialiased;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+`;
+const MissionStatement = styled.div`
+  color: white;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  margin: 4em;
+`;
+const MissionTitle = styled.span`
+  width: 100%;
+  font-family: "Nexa";
+  text-align: center;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 0.8em;
+  -webkit-font-smoothing: antialiased;
+`;
+const MissionP = styled.p`
+  text-align: -webkit-center;
+  margin: 1% 26% 4%;
+  line-height: 30px;
+  font-size: 1.3em;
+  font-family: "Nexa";
+  -webkit-font-smoothing: antialiased;
+`;
+const CarouselWrapper = styled.div`
+  width: 1440px;
+  height: 350px;
+`;
 class HomePage extends Component {
   render() {
     return (
-      <section className="HomePage">
-        {/* <Carousel /> */}
-        <div className="banner-container">
-          <div className="banner-text-container">
-            <span className="banner__text">Art classes start now</span>
-            <h1 className="banner__header">
-              What Starts Here,<br /> Changes the World
-            </h1>
-            <span className="banner__text2">View upcoming art classes</span>
-          </div>
-        </div>
-        <div className="mission-container">
-          <div className="mission-left">
-            <img className="mission-pics" src={HomePics} />
-          </div>
-          <div className="mission-wrapper">
-            <div className="mission-header-container">
-              <span className="mission-header__text">the mission</span>
-            </div>
-            <div className="mission-body-container">
-              <span className="mission-body__text">
-                We work hard to capture the unique style that<br />
-                each students bring while providing a fun and<br /> loving
-                environment for students of all level to<br /> learn and grow
-              </span>
-            </div>
-          </div>
-        </div>
-        <div className="location-container">
-          <div className="location-header-container">
-            <h1 className="location-header__text">View Locations</h1>
-          </div>
-          <div className="location-body-container">
-            <div className="location-body__upper">
-              <LocationBlock />
-            </div>
-          </div>
-        </div>
-      </section>
+      <HomeWrapper>
+        <HomeBanner>
+          <HomeBannerH1>Hero Slide Copy</HomeBannerH1>
+        </HomeBanner>
+        <MissionStatement>
+          <MissionTitle>Mission Statement</MissionTitle>
+          <MissionP>
+            We work hard to capture the unique style that each students bring
+            while providing a fun and loving environment for students of all
+            levels to grow and learn.
+          </MissionP>
+        </MissionStatement>
+        <CarouselWrapper>
+          <Carousel />
+        </CarouselWrapper>
+        <LocationBlock />
+      </HomeWrapper>
     );
   }
 }

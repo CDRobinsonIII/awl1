@@ -156,4 +156,7 @@
     padding-top: 2em;
     height: 80vh;
   }
+  .about-header h1 {
+    font-size: 1.3em;
+  }
 }

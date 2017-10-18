@@ -16,6 +16,9 @@ const NavWrapper = styled.nav`
 const LogoLink = styled(Link)`
   max-width: 470px;
   width: 100%;
+  @media screen and (max-width: 767px) {
+    display: flex;
+  }
 `;
 const Logo = styled.img`width: 100%;`;
 
@@ -33,15 +36,19 @@ const LinkBar = styled.nav`
     position: absolute;
     background: white;
     top: 0px;
-    display: ${props => (props.open ? "block" : "none")};
+    display: ${props => (props.open ? "flex" : "none")};
   }
 `;
 
 const NavBar = styled.div`
 z-index: 99;
-position: absolute;
-top: 2px;
-right: 11px;
+justify-content: flex-end;
+display: flex;
+overflow: hidden;
+position: fixed;
+top: 0;
+width: 100%;
+background: transparent;
 }
 `;
 const StyledLink = styled(Link)`
@@ -60,6 +67,9 @@ const StyledLink = styled(Link)`
   }
   &:last-child {
     margin-right: 0;
+  }
+  @media screen and (max-width: 767px) {
+    font-size: 10px;
   }
 `;
 
@@ -86,7 +96,6 @@ class Header extends Component {
         <NavBar>
           <svg
             onClick={() => this.toggleMenu()}
-            className="mobile-menu"
             fill="#000000"
             height="36"
             viewBox="0 0 24 24"
@@ -100,7 +109,7 @@ class Header extends Component {
           onClick={() => {
             this.toggleMenu();
           }}
-          className={this.state.open ? "open" : "close"}>
+          open={this.state.open}>
           <StyledLink to="/classes">Art Classes</StyledLink>
           <StyledLink to="/locations">Locations</StyledLink>
           <StyledLink to="/camps">Art Camps</StyledLink>
