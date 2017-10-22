@@ -66,7 +66,7 @@
   .location-image__wrapper,
   .location-card-container {
     width: 350px;
-    height: 250px;
+    height: 100%;
   }
   .location-card {
     padding: 0;

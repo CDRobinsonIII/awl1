@@ -1,11 +1,8 @@
 import React, { Component } from "react";
-import HomePics from "../assets/mission-artwork.png";
 import LocationBlock from "../components/LocationBlock";
-import Bonita from "../assets/bonita.png";
-import Lamesa from "../assets/lamesa.png";
-import Santee from "../assets/santee.png";
 import styled from "styled-components";
 import Carousel from "../components/Carousel";
+import Bonita from "../assets/bonita.png";
 
 const HomeWrapper = styled.section`
   display: flex;
@@ -35,6 +32,11 @@ const HomeBannerH1 = styled.h1`
   display:flex;
   justify-content: center;
   align-items: center;
+  @media screen and (max-width: 767px){
+    text-align: -webkit-center;
+    font-size: 1.3em;
+    }
+  }
 `;
 const MissionStatement = styled.div`
   color: white;
@@ -61,10 +63,11 @@ const MissionP = styled.p`
   font-size: 1.3em;
   font-family: "Nexa";
   -webkit-font-smoothing: antialiased;
-`;
-const CarouselWrapper = styled.div`
-  width: 1440px;
-  height: 350px;
+  @media screen and (max-width: 767px) {
+    font-size: 0.8em;
+    line-height: 17px;
+    margin: 4% 13%;
+  }
 `;
 class HomePage extends Component {
   render() {
@@ -81,9 +84,6 @@ class HomePage extends Component {
             levels to grow and learn.
           </MissionP>
         </MissionStatement>
-        <CarouselWrapper>
-          <Carousel />
-        </CarouselWrapper>
         <LocationBlock />
       </HomeWrapper>
     );

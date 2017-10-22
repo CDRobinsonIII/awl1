@@ -1,26 +1,30 @@
-import React from "react";
-import "../styles/carousel.css";
-import Flickity from "flickity";
+import React, { Component } from "react";
+import Slider from "react-slick-carousel";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import Bonita from "../assets/bonita.png";
-import Lamesa from "../assets/lamesa.png";
-import Santee from "../assets/santee.png";
+import "../styles/carousel.css";
 
-const elem = document.querySelector(".main-carousel");
-const flkty = new Flickity(elem, {
-  // options
-  wrapAround: true,
-  cellAlign: "left",
-  contain: true,
-  pageDots: false
-});
-
-export default function Carousel() {
-  return (
-    <div className="carousel" data-flickity="{ &quot;wrapAround&quot;: true }">
-      <div className="carousel-cell" />
-      <div className="carousel-cell" />
-      <div className="carousel-cell" />
-      <div className="carousel-cell" />
-    </div>
-  );
+const settings = {
+  dots: true,
+  infinite: true,
+  speed: 500,
+  slidesToShow: 1,
+  slidesToScroll: 1
+};
+class SimpleSlider extends Component {
+  render() {
+    return (
+      <Slider {...settings}>
+        <div className="slide" />
+        <div className="slide" />
+        <div className="slide" />
+        <div className="slide" />
+        <div className="slide" />
+        <div className="slide" />
+      </Slider>
+    );
+  }
 }
+
+export default SimpleSlider;

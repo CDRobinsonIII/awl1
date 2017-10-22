@@ -10,7 +10,7 @@ const NavWrapper = styled.nav`
   flex-direction: column;
   align-items: center;
   background-color: #fff;
-  height: 250px;
+  height: 100%;
   padding-top: 50px;
 `;
 const LogoLink = styled(Link)`
@@ -18,6 +18,7 @@ const LogoLink = styled(Link)`
   width: 100%;
   @media screen and (max-width: 767px) {
     display: flex;
+    padding: 1em;
   }
 `;
 const Logo = styled.img`width: 100%;`;
@@ -31,25 +32,35 @@ const LinkBar = styled.nav`
   white-space: nowrap;
   padding: 0 3%;
   @media screen and (max-width: 767px) {
+    justify-content: space-between;
+    padding-top: 2em;
+    margin-top: 0px;
+    width: 100%;
+    background: white;
     flex-direction: column;
     text-align: end;
-    position: absolute;
-    background: white;
-    top: 0px;
-    display: ${props => (props.open ? "flex" : "none")};
+    position: fixed;
+    top: -0px;
+    display: ${props => (props.open ? "none" : "flex")};
+    transform: translateY(${props => (props.open ? "-130%" : "0")}); };
+    transition: all 0.4s ease-out;
+    z-index:98;
   }
 `;
 
-const NavBar = styled.div`
-z-index: 99;
-justify-content: flex-end;
-display: flex;
-overflow: hidden;
-position: fixed;
-top: 0;
-width: 100%;
-background: transparent;
-}
+const MobileNav = styled.div`
+  display: none;
+  @media screen and (max-width: 767px) {
+    margin: 0 -4%;
+    z-index: 99;
+    justify-content: flex-end;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: transparent;
+    display: flex;
+  }
 `;
 const StyledLink = styled(Link)`
   color: #828282;
@@ -93,7 +104,7 @@ class Header extends Component {
         <LogoLink to="/">
           <Logo src={logo} />
         </LogoLink>
-        <NavBar>
+        <MobileNav>
           <svg
             onClick={() => this.toggleMenu()}
             fill="#000000"
@@ -104,7 +115,7 @@ class Header extends Component {
             <path d="M0 0h24v24H0z" fill="none" />
             <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" />
           </svg>
-        </NavBar>
+        </MobileNav>
         <LinkBar
           onClick={() => {
             this.toggleMenu();
