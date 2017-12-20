@@ -10,7 +10,7 @@ const NavWrapper = styled.nav`
   flex-direction: column;
   align-items: center;
   background-color: #fff;
-  height: 100%;
+  height: 250px;
   padding-top: 50px;
 `;
 const LogoLink = styled(Link)`
@@ -28,7 +28,7 @@ const LinkBar = styled.nav`
   justify-content: space-between;
   margin-top: 40px;
   width: 100%;
-  max-width: 900px;
+  max-width: 1085.703px;
   white-space: nowrap;
   padding: 0 3%;
   @media screen and (max-width: 767px) {
@@ -66,15 +66,19 @@ const StyledLink = styled(Link)`
   color: #828282;
   font-family: "Nexa";
   font-weight: bold;
-  font-size: 13px;
+  font-size: 16px;
   text-transform: uppercase;
   text-decoration: none;
   letter-spacing: 2px;
   -webkit-font-smoothing: antialiased;
-  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  font-weight: 700px;
+  padding: 15px;
 
   &:hover {
-    color: #333;
+    color: #492649;
   }
   &:last-child {
     margin-right: 0;
