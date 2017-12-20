@@ -1,9 +1,8 @@
 .Footer {
   background: white;
-  height: 25vh;
-  background-position-x: 962px;
-  background-position-y: 60px;
+  height: 245px;
   background-image: url("../assets/footer-brush.png");
+  background-position: right;
   background-repeat: no-repeat;
 }
 .footer-container {
@@ -22,11 +21,12 @@
   align-items: center;
   width: 100%;
   height: 60px;
-  padding: 3.5em 0 1em;
+  padding: 4em 0 1em;
+  margin-bottom: 10px;
 }
 i {
   font-family: "FontAwesome";
-  color: black;
+  color: #828282;
 }
 .footer-icon__container span {
   -webkit-font-smoothing: antialiased;
@@ -39,12 +39,26 @@ i {
   cursor: pointer;
 }
 .footer-middle {
-  padding: 1em 0;
+  padding: 1.5em 0;
 }
-.footer-middle span {
+.footer-middle a {
+  color: #828282;
+  font-size: 16px;
+  font-family: Nexa, sans-serif;
   text-transform: uppercase;
-  padding: 0 4em 0 0;
+  font-weight: 700;
   -webkit-font-smoothing: antialiased;
+  margin-right: 45px;
+  background-color: #f8f8f8;
+  padding: 5px;
+}
+.footer-middle a:hover {
+  cursor: pointer;
+  color: #492649;
+}
+.footer-copyright {
+  font-family: Playfair Display, serif;
+  color: #a8a8a8;
 }
 @media screen and (max-width: 767px) {
   .Footer {

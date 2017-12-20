@@ -17,13 +17,13 @@ export default function Footer() {
           </a>
         </div>
         <div className="footer-middle">
-          <span>Frequently asked questions</span>
-          <span>Become an instructor</span>
+          <a>Frequently asked questions</a>
+          <a>Become an instructor</a>
         </div>
-        <span>
-          Designed by Miles Cartwright. Built by Art Longbottom and Niccolo
-          Ortega. All rights reserved with Art with Larisse.
-        </span>
+        <p className="footer-copyright">
+          Designed by Miles Cartwright. Built by Niccolo Ortega. All rights
+          reserved with Art with Larisse.
+        </p>
       </div>
     </section>
   );
