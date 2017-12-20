@@ -37,6 +37,7 @@ i {
 }
 .footer-icon__container a:hover {
   cursor: pointer;
+  color: #492649;
 }
 .footer-middle {
   padding: 1.5em 0;
