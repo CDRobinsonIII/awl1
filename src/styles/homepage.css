@@ -11,6 +11,7 @@
   margin: 5em;
 }
 .homeHero-Wrapper p {
+  -webkit-font-smoothing: antialiased;
   font-family: Nexa, sans-serif;
   text-transform: uppercase;
   margin-bottom: 35px;
@@ -35,6 +36,48 @@
 }
 .homeMission {
   background-image: url("../assets/mission-block-background.png");
-  height: 713px;
+  height: 479px;
   background-repeat: no-repeat;
+  margin-bottom: 150px;
+}
+.homeMission p {
+  position: relative;
+  font-family: Playfair Display, serif;
+  -webkit-font-smoothing: antialiased;
+  width: 34%;
+  top: -158%;
+  right: -55%;
+  color: #fff;
+  font-size: 1.5em;
+  line-height: 1.8em;
+}
+.homeMission span {
+  position: absolute;
+  font-family: Nexa, sans-serif;
+  font-size: 0.6em;
+  text-transform: uppercase;
+  font-weight: 700;
+  transform: translateX(-130%);
+  letter-spacing: 0.04em;
+}
+.secondary-Spacer {
+  background-image: url("../assets/location-block-background.png");
+  height: 360px;
+  background-size: cover;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  font-size: 0;
+}
+.homeLocation {
+  background-image: url("../assets/secondary-background-tile.png");
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative;
+  padding-bottom: 100px;
 }

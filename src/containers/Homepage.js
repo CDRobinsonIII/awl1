@@ -20,11 +20,20 @@ class HomePage extends Component {
         <section className="homeMission">
           <img src={Cats} />
           <p>
-            <span>The Mission</span> We work hard to capture the unique style
-            that each student brings while providing a fun and loving
-            environment for students of all levels to grow and learn.
+            <span>The Mission</span>
+            We work hard to capture the unique style that each student brings
+            while providing a fun and loving environment for students of all
+            levels to grow and learn.
           </p>
         </section>
+        <div className="secondary-Spacer" />
+        <div className="homeLocation">
+          <span>View Locations</span>
+          <div className="homeLocation-wrapper">
+            <div className="homeLocationRow" />
+            <div className="homeLocationRow" />
+          </div>
+        </div>
       </div>
     );
   }
