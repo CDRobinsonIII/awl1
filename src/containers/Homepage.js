@@ -3,6 +3,10 @@ import LocationBlock from "../components/LocationBlock";
 import Home from "../assets/hero-home-1.jpg";
 import "../styles/homepage.css";
 import Cats from "../assets/mission-artwork.png";
+import LocationCard from "../components/LocationCard";
+import Bonita from "../assets/bonita.png";
+import Santee from "../assets/santee.png";
+import Lamesa from "../assets/lamesa.png";
 
 class HomePage extends Component {
   render() {
@@ -28,10 +32,34 @@ class HomePage extends Component {
         </section>
         <div className="secondary-Spacer" />
         <div className="homeLocation">
-          <span>View Locations</span>
+          <span className="homeLocationTag">View Locations</span>
           <div className="homeLocation-wrapper">
-            <div className="homeLocationRow" />
-            <div className="homeLocationRow" />
+            <div className="homeLocationRow">
+              <LocationCard
+                image={Bonita}
+                name="Bonita"
+                address="4510 Bonita Road"
+                city="Bonita, CA 91902"
+                number="(619) 508-1299"
+              />
+              <LocationCard name="Kearny Mesa" />
+            </div>
+            <div className="homeLocationRow">
+              <LocationCard
+                image={Lamesa}
+                name="La Mesa"
+                address="5208 Jackson Drive, Ste 111"
+                city="La Mesa, CA 91942"
+                number="(619) 857-1270"
+              />
+              <LocationCard
+                image={Santee}
+                name="Santee"
+                address="9225 Carlton Hills Blvd, Ste. 31"
+                city="Santee, CA 92071"
+                number="(619) 855-2787"
+              />
+            </div>
           </div>
         </div>
       </div>

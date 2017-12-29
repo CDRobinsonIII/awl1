@@ -81,3 +81,21 @@
   position: relative;
   padding-bottom: 100px;
 }
+.homeLocationTag {
+  font-family: AvantGardeMdITC, helvetica;
+  -webkit-font-smoothing: antialiased;
+  color: #fff;
+  font-size: 3.5em;
+  position: absolute;
+  top: -100px;
+}
+.homeLocation-wrapper {
+  width: 100%;
+  height: 110vh;
+}
+.homeLocationRow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 385px;
+}
