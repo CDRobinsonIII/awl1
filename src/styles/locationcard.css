@@ -31,6 +31,7 @@
   font-size: 2em;
   line-height: 1.5em;
   color: white;
+  text-decoration: none;
 }
 .locationCard-Bottom {
   position: relative;
@@ -59,7 +60,7 @@
   color: white;
   text-transform: uppercase;
 }
-i {
+.locationCard-Links i {
   padding-left: 5px;
   font-family: "FontAwesome";
   color: white;

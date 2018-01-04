@@ -24,9 +24,9 @@
   padding: 4em 0 1em;
   margin-bottom: 10px;
 }
-i {
-  font-family: "FontAwesome";
+.fa {
   color: #828282;
+  font-family: "FontAwesome";
 }
 .footer-icon__container span {
   -webkit-font-smoothing: antialiased;
@@ -50,7 +50,6 @@ i {
   font-weight: 700;
   -webkit-font-smoothing: antialiased;
   margin-right: 45px;
-  background-color: #f8f8f8;
   padding: 5px;
 }
 .footer-middle a:hover {
