@@ -1,30 +1,24 @@
-import React, { Component } from "react";
-import Slider from "react-slick-carousel";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-import Bonita from "../assets/bonita.png";
-import "../styles/carousel.css";
+import "../../node_modules/react-image-gallery/styles/css/image-gallery.css";
+import React from "react";
+import ImageGallery from "react-image-gallery";
 
-const settings = {
-  dots: true,
-  infinite: true,
-  speed: 500,
-  slidesToShow: 1,
-  slidesToScroll: 1
-};
-class SimpleSlider extends Component {
+export default class MyComponent extends React.Component {
   render() {
-    return (
-      <Slider {...settings}>
-        <div className="slide" />
-        <div className="slide" />
-        <div className="slide" />
-        <div className="slide" />
-        <div className="slide" />
-        <div className="slide" />
-      </Slider>
-    );
+    const images = [
+      {
+        original: "http://lorempixel.com/1000/600/nature/1/",
+        thumbnail: "http://lorempixel.com/250/150/nature/1/"
+      },
+      {
+        original: "http://lorempixel.com/1000/600/nature/2/",
+        thumbnail: "http://lorempixel.com/250/150/nature/2/"
+      },
+      {
+        original: "http://lorempixel.com/1000/600/nature/3/",
+        thumbnail: "http://lorempixel.com/250/150/nature/3/"
+      }
+    ];
+
+    return <ImageGallery items={images} />;
   }
 }
-
-export default SimpleSlider;

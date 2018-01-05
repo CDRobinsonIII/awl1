@@ -7,6 +7,7 @@ import LocationCard from "../components/LocationCard";
 import Bonita from "../assets/bonita.png";
 import Santee from "../assets/santee.png";
 import Lamesa from "../assets/lamesa.png";
+import MyComponent from "../components/Carousel";
 
 class HomePage extends Component {
   render() {
@@ -36,16 +37,21 @@ class HomePage extends Component {
           <div className="homeLocation-wrapper">
             <div className="homeLocationRow">
               <LocationCard
+                backgroundColor="rgba(73, 38, 73, 0.7"
                 image={Bonita}
                 name="Bonita"
                 address="4510 Bonita Road"
                 city="Bonita, CA 91902"
                 number="(619) 508-1299"
               />
-              <LocationCard name="Kearny Mesa" />
+              <LocationCard
+                backgroundColor="rgba(253, 163, 89, 0.7)"
+                name="Kearny Mesa"
+              />
             </div>
             <div className="homeLocationRow">
               <LocationCard
+                backgroundColor="rgba(235, 101, 89, 0.7)"
                 image={Lamesa}
                 name="La Mesa"
                 address="5208 Jackson Drive, Ste 111"
@@ -53,6 +59,7 @@ class HomePage extends Component {
                 number="(619) 857-1270"
               />
               <LocationCard
+                backgroundColor="rgba(238, 192, 44, 0.7)"
                 image={Santee}
                 name="Santee"
                 address="9225 Carlton Hills Blvd, Ste. 31"
