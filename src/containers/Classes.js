@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import "../styles/classes.css";
+import { withRouter, Link } from "react-router-dom";
 import Santee from "../assets/santee.png";
 import LocationBlock from "../components/LocationBlock";
 
@@ -20,7 +21,9 @@ class About extends Component {
             get started please click the “locations” button below to pick the
             studio closest to you.
           </p>
-          <button>Locations</button>
+          <Link className="classes-button" to="/locations">
+            Locations
+          </Link>
         </div>
         <div className="classes-spacer" />
         <div className="classes-lower-block">
