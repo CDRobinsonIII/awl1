@@ -7,7 +7,7 @@ export default function Location(props) {
       <div className="locationCard-Top">
         <a href="" className="location-image__wrapper">
           <img src={props.image} />
-          <div className="location-overlay">
+          <div style={{ background: props.color }} className="location-overlay">
             <h2>{props.name}</h2>
           </div>
         </a>

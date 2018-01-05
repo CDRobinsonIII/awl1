@@ -16,19 +16,22 @@ class About extends Component {
           <p>
             We invite you to attend a free introductory class to see what we are
             all about. We will provide the supplies needed during that first
-            class. The student must be atleast 4 1/2 years odl to atted. To
-            schedule a class click on the schedule icon for each location below.
+            class. The student must be at least 4 ½ years of age to attend. To
+            get started please click the “locations” button below to pick the
+            studio closest to you.
           </p>
+          <button>Locations</button>
         </div>
-        <div className="classes-locations-block">
-          <LocationBlock />
-        </div>
+        <div className="classes-spacer" />
         <div className="classes-lower-block">
           <div className="classes-header-container">
-            <h2>Check out all the different types of classes we offer</h2>
+            <h2>
+              In addition to our regularly scheduled children's art classes we
+              also offer:
+            </h2>
             <div className="classes-body">
               <div className="classes-col">
-                <h2>Adult art classes</h2>
+                <h3>Adult art classes</h3>
                 <div className="classes-body-imageWrapper">
                   <img src={Santee} />
                 </div>
@@ -56,7 +59,7 @@ class About extends Component {
                 <button>Schedule free intro class</button>
               </div>
               <div className="classes-col">
-                <h2>Charter Schools</h2>
+                <h3>Charter Schools</h3>
                 <img className="classes-body-imageWrapper" src={Santee} />
                 <span>
                   We happily accept Charter School Students at our studios. We
@@ -83,7 +86,7 @@ class About extends Component {
                 </p>
               </div>
               <div className="classes-col">
-                <h2>Girl and Boy Scouts</h2>
+                <h3>Girl and Boy Scouts</h3>
                 <img className="classes-body-imageWrapper" src={Santee} />
                 <p>
                   We offer a special 1 hour and 15 minute class to Girl Scouts

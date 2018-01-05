@@ -1,9 +1,10 @@
 .location-card-container {
-  margin: 0.5em;
+  margin-right: 30px;
   width: 475px;
   height: 370px;
 }
 .location-image__wrapper {
+  text-decoration: none;
   width: 475px;
   height: 250px;
 }
@@ -13,9 +14,6 @@
 }
 .location-overlay:first-of-type {
   background-color: rgba(73, 38, 73, 0.7);
-}
-.location-overlay:nth-of-type(2) {
-  background-color: rgba(253, 163, 89, 0.7);
 }
 .location-overlay {
   position: relative;
