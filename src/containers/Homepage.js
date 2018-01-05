@@ -47,6 +47,9 @@ class HomePage extends Component {
               <LocationCard
                 backgroundColor="rgba(253, 163, 89, 0.7)"
                 name="Kearny Mesa"
+                address="4885 Ronson Court Suite D"
+                city="San Diego, CA 92111"
+                number="(619)-456-7506"
               />
             </div>
             <div className="homeLocationRow">

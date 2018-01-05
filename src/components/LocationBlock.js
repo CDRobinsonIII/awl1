@@ -19,6 +19,7 @@ class LocationBlock extends Component {
         <div className="locations-body">
           <div className="location-upper">
             <LocationCard
+              backgroundColor="rgba(73, 38, 73, 0.7"
               image={Bonita}
               name="Bonita"
               address="4510 Bonita Road"
@@ -28,6 +29,7 @@ class LocationBlock extends Component {
             <LocationCard
               image={Blank}
               name="Kearny Mesa"
+              backgroundColor="rgba(253, 163, 89, 0.7)"
               address="4885 Ronson Court Suite D"
               city="San Diego, CA 92111"
               number="(619)-456-7506"
@@ -36,6 +38,7 @@ class LocationBlock extends Component {
           <div className="location-lower">
             <LocationCard
               image={Lamesa}
+              backgroundColor="rgba(235, 101, 89, 0.7)"
               name="La Mesa"
               address="5208 Jackson Drive, Suite 111"
               city="La Mesa, CA 91942"
@@ -43,6 +46,7 @@ class LocationBlock extends Component {
             />
             <LocationCard
               image={Santee}
+              backgroundColor="rgba(238, 192, 44, 0.7)"
               name="Santee"
               address="9225 Carlton Hills, Ste 31"
               city="Santee, CA 92701"

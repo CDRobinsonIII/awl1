@@ -6,8 +6,9 @@
   height: 100%;
 }
 .locations-header {
-  height: 300px;
-  /* background-repeat: no-repeat; */
+  height: 411px;
+  background-repeat: no-repeat;
+  background-size: cover;
   width: 100%;
   display: flex;
   justify-content: center;
