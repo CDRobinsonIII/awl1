@@ -25,7 +25,6 @@ class About extends Component {
             Locations
           </Link>
         </div>
-        <div className="classes-spacer" />
         <div className="classes-lower-block">
           <div className="classes-header-container">
             <h2>
@@ -107,6 +106,7 @@ class About extends Component {
             </div>
           </div>
         </div>
+        {/* <div className="classes-spacer" /> */}
       </section>
     );
   }

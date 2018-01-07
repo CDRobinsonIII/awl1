@@ -3,7 +3,7 @@ import { connect } from "react-redux";
 import { withRouter, Link } from "react-router-dom";
 import * as actions from "actions/header";
 import styled from "styled-components";
-import logo from "assets/logo.svg";
+import logo from "../assets/Art-Larisse-Logo.png";
 
 const NavWrapper = styled.nav`
   display: flex;
@@ -21,7 +21,9 @@ const LogoLink = styled(Link)`
     padding: 1em;
   }
 `;
-const Logo = styled.img`width: 100%;`;
+const Logo = styled.img`
+  width: 100%;
+`;
 
 const LinkBar = styled.nav`
   display: flex;
@@ -78,7 +80,8 @@ const StyledLink = styled(Link)`
   padding: 15px;
 
   &:hover {
-    color: #492649;
+    background: #3d2637;
+    color: white;
   }
   &:last-child {
     margin-right: 0;
