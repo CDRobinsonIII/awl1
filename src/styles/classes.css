@@ -109,9 +109,7 @@
 }
 .classes-col h3 {
   font-family: "Nexa";
-
   font-size: 1.5em;
-
   padding: 1.5em;
   text-transform: capitalize;
   font-weight: 800;
@@ -144,7 +142,6 @@
   padding: 0.5em;
   width: 100%;
   text-align: -webkit-left;
-  list-style-type: none;
   font-family: "Nexa";
 }
 .classes-col p {

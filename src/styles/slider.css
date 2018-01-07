@@ -1,0 +1,28 @@
+.slider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.slider-wrapper {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+.slide {
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+}
+.backArrow {
+  position: absolute;
+  left: 0px;
+}
+.nextArrow {
+  position: absolute;
+  right: 0px;
+}
+.fa-arrow-left,
+.fa-arrow-right {
+  color: white;
+}

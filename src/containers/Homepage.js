@@ -7,7 +7,8 @@ import LocationCard from "../components/LocationCard";
 import Bonita from "../assets/bonita.png";
 import Santee from "../assets/santee.png";
 import Lamesa from "../assets/lamesa.png";
-import MyComponent from "../components/Carousel";
+import Slider from "../components/Carousel";
+import Slider1 from "../components/Slider";
 
 class HomePage extends Component {
   render() {
@@ -22,6 +23,7 @@ class HomePage extends Component {
             <a href="">View upcoming classes</a>
           </div>
         </section>
+        <Slider />
         <section className="homeMission">
           <img src={Cats} />
           <p>
@@ -33,7 +35,7 @@ class HomePage extends Component {
         </section>
         <div className="secondary-Spacer" />
         <div className="homeLocation">
-          <span className="homeLocationTag">View Locations</span>
+          <span className="homeLocationTag">Our Locations</span>
           <div className="homeLocation-wrapper">
             <div className="homeLocationRow">
               <LocationCard
