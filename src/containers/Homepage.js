@@ -23,7 +23,7 @@ class HomePage extends Component {
             <a href="">View upcoming classes</a>
           </div>
         </section>
-        <Slider />
+        {/* <Slider /> */}
         <section className="homeMission">
           <img src={Cats} />
           <p>
