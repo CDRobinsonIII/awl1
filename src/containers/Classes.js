@@ -43,7 +43,9 @@ class About extends Component {
                     </span>
                     <ul>
                       <li>Every other Wednesday</li>
-                      <li>6-8:30</li>
+                      <li>
+                        <i className="fa fa-clock-o" aria-hidden="true" />6-8:30
+                      </li>
                     </ul>
                   </div>
                   <div className="artClass-cityBlock-right">
@@ -52,7 +54,9 @@ class About extends Component {
                     </span>
                     <ul>
                       <li>Wednesday</li>
-                      <li>11-2PM</li>
+                      <li>
+                        <i className="fa fa-clock-o" aria-hidden="true" />11-2PM
+                      </li>
                     </ul>
                   </div>
                 </div>

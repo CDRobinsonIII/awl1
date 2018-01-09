@@ -57,6 +57,7 @@
   text-decoration: none;
   color: white;
   text-transform: uppercase;
+  font-weight: 800;
 }
 .locationCard-Links i {
   padding-left: 5px;
