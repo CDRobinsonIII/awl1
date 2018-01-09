@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import "../styles/classes.css";
 import { withRouter, Link } from "react-router-dom";
-import Santee from "../assets/santee.png";
 import LocationBlock from "../components/LocationBlock";
 
 class About extends Component {
@@ -28,46 +27,58 @@ class About extends Component {
         <div className="classes-lower-block">
           <div className="classes-header-container">
             <h2>
-              In addition to our regularly scheduled children's art classes we
-              also offer:
+              In addition to our regularly scheduled <br />
+              children's art classes we also offer:
             </h2>
             <div className="classes-body">
               <div className="classes-col">
-                <h3>Adult art classes</h3>
-                <div className="classes-body-imageWrapper">
-                  <img src={Santee} />
+                <div className="classes-body-imageWrapper artclasses">
+                  <h3>Adult art classes</h3>
+                  <div />
                 </div>
-                <span>
-                  <strong>La Mesa</strong>
-                </span>
-                <ul>
-                  <li>Every other Wednesday</li>
-                  <li>6-8:30</li>
-                </ul>
+                <div className="artClass-cityBlock">
+                  <div className="artClass-cityBlock-left">
+                    <span>
+                      <strong>La Mesa</strong>
+                    </span>
+                    <ul>
+                      <li>Every other Wednesday</li>
+                      <li>6-8:30</li>
+                    </ul>
+                  </div>
+                  <div className="artClass-cityBlock-right">
+                    <span>
+                      <strong>Bonita</strong>
+                    </span>
+                    <ul>
+                      <li>Wednesday</li>
+                      <li>11-2PM</li>
+                    </ul>
+                  </div>
+                </div>
                 <p>
-                  We offer adult art classes to those who want an environment
-                  without children. Although we welcome adutls to attend at any
-                  time during our classes offered at all of our studios we
-                  currently only have one class tune that offers an adult only
-                  setting. The class is held at the La Mesa Studio every other
-                  Wednesday from 6:00 to 8:30. It's 2 1/2 hour class that is
-                  considered double our regular time so that the students can
-                  get more done in the time attending. The price is therfore
-                  double the cost of one of our regular classes that is only 1
-                  hour and 15 minutes long. If you would like to set up a free
-                  introductory class to come in and try it out please click
-                  here.
+                  We welcome all of our adults to attend during our regular
+                  classes with children, but we also offer a select few classes
+                  that are available only to adults. These classes provide a
+                  unique environment allowing adults to create and thrive
+                  learning the mediums we teach. This class is set up for a
+                  double amount of time and therefore is double in cose. The
+                  first free class will help us to establish what you want to
+                  learn with us and we can talk about the medium you prefer to
+                  work in. We specialize in Charcoal, Pastel, Watercolor and
+                  Oils.
                 </p>
                 <button>Schedule free intro class</button>
               </div>
               <div className="classes-col">
-                <h3>Charter Schools</h3>
-                <img className="classes-body-imageWrapper" src={Santee} />
+                <div className="classes-body-imageWrapper charterschools">
+                  <h3>Charter Schools</h3>
+                </div>
                 <span>
-                  We happily accept Charter School Students at our studios. We
+                  We happily accept Charter School students at our studios. We
                   are currently set up as Vendors at:
                 </span>
-                <ul>
+                <ul className="charterschoollist">
                   <li>Julian Charter School</li>
                   <li>Dehesa Charter School</li>
                   <li>Greater San Diego Academy</li>
@@ -88,8 +99,9 @@ class About extends Component {
                 </p>
               </div>
               <div className="classes-col">
-                <h3>Girl and Boy Scouts</h3>
-                <img className="classes-body-imageWrapper" src={Santee} />
+                <div className="classes-body-imageWrapper girlboyscouts">
+                  <h3>Girl and Boy Scouts</h3>
+                </div>
                 <p>
                   We offer a special 1 hour and 15 minute class to Girl Scouts
                   and Boy Scouts. You will get a lesson with your troop to earn
@@ -106,7 +118,6 @@ class About extends Component {
             </div>
           </div>
         </div>
-        {/* <div className="classes-spacer" /> */}
       </section>
     );
   }

@@ -111,18 +111,42 @@
 .classes-col h3 {
   font-family: "Nexa";
   font-size: 1.5em;
-  padding: 1.5em;
   text-transform: capitalize;
   font-weight: 800;
 }
 .classes-body-imageWrapper {
-  width: 320px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 200px;
 }
-.classes-col img {
-  width: 320px;
-  margin: 1em;
+.artclasses {
+  background: #613b61;
+}
+.charterschools {
+  background: #f76363;
+}
+.girlboyscouts {
+  background: #32c0bb;
+}
+.artClass-cityBlock {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
+.artClass-cityBlock span {
+  margin-left: -64px;
+  line-height: 0.8em;
+}
+.charterschoollist {
+  list-style-type: inherit;
+}
+.charterschoollist li {
+  margin-left: 16px;
+}
 .classes-col span {
   font-family: "Nexa";
 
