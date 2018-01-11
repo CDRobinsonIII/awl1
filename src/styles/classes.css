@@ -68,169 +68,39 @@
   line-height: 1;
   letter-spacing: 1px;
 }
-.classes-spacer {
-  background-image: url("../assets/ArtwithLarisseOrange.jpg");
-  width: 100%;
-  height: 360px;
-  background-size: cover;
-  background-position: 50%;
-  background-repeat: no-repeat;
-}
 .classes-lower-block {
-  padding: 27% 0 0;
+  padding: 17% 0 0;
   background-image: url("../assets/ArtwithLarisseOrange.jpg");
   width: 100%;
-}
-.classes-header-container {
-  text-align: center;
-  padding: 2em;
-}
-.classes-header-container h2 {
-  font-family: AvantGardeMdITC, helvetica;
-  color: #fff;
-  font-size: 2em;
-  position: relative;
-  top: -181px;
-  padding: 0px 23%;
-  letter-spacing: 0.8px;
-}
-.classes-body {
-  display: flex;
-  justify-content: center;
-  margin-top: -158px;
-  color: white;
-}
-.classes-col {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  width: 320px;
-  box-sizing: border-box;
-  margin: 1em;
-}
-.classes-col h3 {
-  font-family: "Nexa";
-  font-size: 1.5em;
-  text-transform: capitalize;
-  font-weight: 800;
-}
-.classes-body-imageWrapper {
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 300px;
-  height: 200px;
-}
-.artclasses {
-  background: #613b61;
-}
-.charterschools {
-  background: #f76363;
-}
-.girlboyscouts {
-  background: #32c0bb;
-}
-.artClass-cityBlock {
-  display: flex;
   justify-content: center;
   align-items: center;
 }
-
-.artClass-cityBlock span {
-  margin-left: -64px;
-  line-height: 0.8em;
-}
-.charterschoollist {
-  list-style-type: inherit;
-}
-.charterschoollist li {
-  margin-left: 16px;
-}
-.classes-col span {
+.classes-lower-block h2 {
+  color: white;
   font-family: "Nexa";
-
-  padding: 0.5em;
-  width: 100%;
-  text-align: -webkit-left;
-  line-height: 1.8em;
-}
-.classes-col span strong {
+  font-size: 2.5em;
   font-weight: 900;
+  text-align: center;
+  margin-bottom: 50px;
 }
-.classes-col ul {
-  padding: 0.5em;
-  width: 100%;
-  text-align: -webkit-left;
+.classes-content-wrapper {
+  display: flex;
 }
-.classes-col li {
-  padding: 0.5em;
-  width: 100%;
-  text-align: -webkit-left;
-  font-family: "Nexa";
+.classes-col {
+  width: 33.33%;
 }
-.classes-col p {
-  line-height: 1.8em;
-  padding: 0.5em;
-  width: 100%;
-  text-align: -webkit-left;
-  font-family: "Nexa";
-  margin-bottom: 1em;
-}
-.classes-col button {
+.classes-adult {
   background-color: #fff;
   color: #7b407b;
   font-family: Nexa, sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   border: none;
-  padding: 15px 60px 12px;
+  padding: 17px 35px 17px;
   border-radius: 25px;
   font-size: 0.8em;
   line-height: 1;
-}
-@media screen and (max-width: 767px) {
-  .classes-header h1 {
-    font-size: 1.3em;
-  }
-  .classes-intro-block {
-    padding: 0;
-  }
-  .classes-intro-block h2 {
-    font-size: 1.3em;
-  }
-  .classes-intro-block span {
-    font-size: 0.7em;
-  }
-  .classes-intro-block p {
-    line-height: 1.7em;
-    font-size: 11px;
-    margin: 0 6%;
-  }
-  .classes-header-container h2 {
-    font-size: 1em;
-  }
-  .classes-body {
-    flex-direction: column;
-  }
-  .classes-col img {
-    margin: 0em;
-  }
-  .classes-col {
-    margin: 0;
-  }
-  .classes-col li,
-  .classes-col span {
-    font-size: 11px;
-  }
-  .classes-col p {
-    font-size: 11px;
-    text-align: -webkit-left;
-  }
-  .classes-col button {
-    font-size: 10px;
-  }
-  .classes-col img {
-    padding-bottom: 0.8em;
-  }
+  letter-spacing: 1px;
 }

@@ -25,40 +25,25 @@ class About extends Component {
           </Link>
         </div>
         <div className="classes-lower-block">
-          <div className="classes-header-container">
-            <h2>
-              In addition to our regularly scheduled <br />
-              children's art classes we also offer:
-            </h2>
-            <div className="classes-body">
-              <div className="classes-col">
-                <div className="classes-body-imageWrapper artclasses">
-                  <h3>Adult art classes</h3>
-                  <div />
+          <h2>
+            In addition to our regularly scheduled<br /> children's art classes
+            we also offer:
+          </h2>
+          <div className="classes-content-wrapper">
+            <div className="classes-col">
+              <div className="classes-colored-box">
+                <h3>Adult Art Classes</h3>
+              </div>
+              <div className="classes-location-wrapper">
+                <div className="classes-location-left">
+                  <span>La Mesa</span>
+                  <span>Every Other Wednesday</span>
+                  <span>6-8:30</span>
                 </div>
-                <div className="artClass-cityBlock">
-                  <div className="artClass-cityBlock-left">
-                    <span>
-                      <strong>La Mesa</strong>
-                    </span>
-                    <ul>
-                      <li>Every other Wednesday</li>
-                      <li>
-                        <i className="fa fa-clock-o" aria-hidden="true" />6-8:30
-                      </li>
-                    </ul>
-                  </div>
-                  <div className="artClass-cityBlock-right">
-                    <span>
-                      <strong>Bonita</strong>
-                    </span>
-                    <ul>
-                      <li>Wednesday</li>
-                      <li>
-                        <i className="fa fa-clock-o" aria-hidden="true" />11-2PM
-                      </li>
-                    </ul>
-                  </div>
+                <div className="classes-location-right">
+                  <span>Bonita</span>
+                  <span>Wednedsday</span>
+                  <span>11-2PM</span>
                 </div>
                 <p>
                   We welcome all of our adults to attend during our regular
@@ -66,59 +51,61 @@ class About extends Component {
                   that are available only to adults. These classes provide a
                   unique environment allowing adults to create and thrive
                   learning the mediums we teach. This class is set up for a
-                  double amount of time and therefore is double in cose. The
+                  double amount of time and therefore is double in cost. The
                   first free class will help us to establish what you want to
                   learn with us and we can talk about the medium you prefer to
                   work in. We specialize in Charcoal, Pastel, Watercolor and
-                  Oils.
+                  Oils
                 </p>
-                <button>Schedule free intro class</button>
+                <button className="classes-adult">
+                  Schedule free intro class
+                </button>
               </div>
-              <div className="classes-col">
-                <div className="classes-body-imageWrapper charterschools">
-                  <h3>Charter Schools</h3>
-                </div>
-                <span>
-                  We happily accept Charter School students at our studios. We
-                  are currently set up as Vendors at:
-                </span>
-                <ul className="charterschoollist">
-                  <li>Julian Charter School</li>
-                  <li>Dehesa Charter School</li>
-                  <li>Greater San Diego Academy</li>
-                  <li>The Learning Choice Academy</li>
-                  <li>Summit Academy</li>
-                  <li>Inspire Charter Schools</li>
-                  <li>Harbor Springs</li>
-                </ul>
-                <p>
-                  As vendors for these schools we can take request from students
-                  to attend our classes. Some of the schools will pay for
-                  supplies, but not all. In order to get going as a charter
-                  school student the first step is to sign up for our free
-                  introductory class to get all your questions answered and set
-                  up a schedule for the future classes. From there we can begin
-                  the billing process for the school and get your child enrolled
-                  in the art classes.
-                </p>
+            </div>
+            <div className="classes-col">
+              <div className="classes-colored-box">
+                <h3>Charter Schools</h3>
               </div>
-              <div className="classes-col">
-                <div className="classes-body-imageWrapper girlboyscouts">
-                  <h3>Girl and Boy Scouts</h3>
-                </div>
-                <p>
-                  We offer a special 1 hour and 15 minute class to Girl Scouts
-                  and Boy Scouts. You will get a lesson with your troop to earn
-                  that badge or even just to enjoy an art class together. We
-                  will offer a special price of $10 per student to attend a
-                  class with a minimum of $80 paid. We have a maximum of 14
-                  children allowed in one meeting. To book your class with your
-                  troop, please contact the studio you would like to attend and
-                  look at our class schedule so we can give you a private event.
-                  We will provide all art supplies and the kids get to go home
-                  with a great piece of art.
-                </p>
+              <p>
+                We happily accept Charter School students at our studious. We
+                are currently set up as Vendors at:
+              </p>
+              <ul>
+                <li>Julian Charter School</li>
+                <li>Dehesa Charter School</li>
+                <li>Greater San Diego Academy</li>
+                <li>The Learning Choice Academy</li>
+                <li>Inspire Charter Schools</li>
+                <li>Harbor Springs</li>
+              </ul>
+              <p>
+                As Vendors for these schools we can take request from students
+                to attend our classes. Some of the schools will pay for
+                supplies, but not all. In order to get going as a charter school
+                student the first step is to sign up for our free introductory
+                class to get all your questions answered and set up a schedule
+                for the future classes. From there we can begin the billing
+                process for the school and get your child enrolled in the art
+                classes.
+              </p>
+            </div>
+            <div className="classes-col">
+              <div className="classes-colored-box">
+                <h3>Girl and Boy Scouts</h3>
               </div>
+              <p>
+                We offer a special 1 hour and 15 minute class to Girl Scouts and
+                Boy Scouts. You will get a lesson with your troop to earn that
+                badge or even just to enjoy an art class together. We will offer
+                a special price of $10 per student to attend a class with a
+                minimum of $80 paid. We have a maximum if 14 children allowed in
+                one meeting. To book your class with your troop, please contact
+                the studio you would like to attend and look at our class
+                schedule for that studio and figure out a day and time that
+                doesnt conflict with our current schedule so we can give you a
+                private event. We will provide all art supplies and the kids get
+                to go home with a great piece of art.
+              </p>
             </div>
           </div>
         </div>
