@@ -1,33 +1,50 @@
 .artCampCard {
   font-family: "Nexa";
   display: flex;
-  margin: 4em 10em;
+  margin: 4em 10em 3em;
 }
 .campCard-left {
   display: flex;
   flex-direction: column;
-}
-.cardleft-upper {
-  height: 270px;
-}
-.cardleft-upper img {
-  height: 100%;
-}
-.cardleft-lower {
-  display: flex;
-  height: 175px;
-}
-.cardleft-lower img {
   width: 50%;
+  height: 380px;
+  padding-left: 40px;
+}
+.firstImage {
+  position: relative;
+  top: 210px;
+  z-index: 10;
+  width: 250px;
+  right: -219px;
+  height: 200px;
+}
+.secondImage {
+  position: relative;
+  top: -30px;
+  width: 310px;
+  height: 220px;
+  left: -60px;
+}
+.thirdImage {
+  width: 400px;
+  height: 250px;
+  position: relative;
+  top: -420px;
+  z-index: 9;
 }
 .campCard-right {
+  width: 50%;
+  height: 380px;
   box-sizing: border-box;
   margin: 0 2em;
+  padding-left: 40px;
   color: black;
 }
 .campright-header {
   margin-top: -10px;
   padding: 1em 0;
+  color: #492649;
+  font-family: AvantGardeMdITC;
 }
 .campright-header__text {
   font-size: 2.5em;
@@ -35,6 +52,8 @@
   -webkit-font-smoothing: antialiased;
 }
 .campright-body {
+  font-family: Playfair Display;
+  color: #492649;
 }
 .camright-body__text {
   font-size: 1em;
@@ -43,19 +62,38 @@
 }
 .campright-info {
   display: flex;
-  flex-direction: column;
   padding: 1em 0;
+  justify-content: space-evenly;
+  padding-right: 115px;
+}
+.campInfo-left {
+  display: flex;
+  flex-direction: column;
+}
+.campInfo-left span {
+  color: #492649;
+  letter-spacing: 1px;
+  margin-top: 1px;
+  text-transform: uppercase;
+  font-size: 0.8em;
 }
 .campright-info span {
   padding: 0.5em 0em;
-  font-size: 1em;
+  font-size: 0.8em;
   font-weight: 600;
 }
 .campright-info li {
+  font-family: "Nexa";
   padding: 0.5em 0;
   font-size: 1em;
+  color: #492649;
 }
-.campright-contacts {
+.campright-contacts ul {
+  color: #492649;
+  font-size: 0.8em;
+}
+.hl {
+  color: #492649;
 }
 @media screen and (max-width: 767px) {
   .artCampCard {

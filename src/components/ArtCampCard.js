@@ -5,13 +5,9 @@ export default function ArtCampCard(props) {
   return (
     <div className="artCampCard">
       <div className="campCard-left">
-        <div className="cardleft-upper">
-          <img src={props.leftUpperimage} />
-        </div>
-        <div className="cardleft-lower">
-          <img src={props.leftLowerImage} />
-          <img src={props.rightLowerImage} />
-        </div>
+        <img className="firstImage" src={props.leftUpperimage} />
+        <img className="secondImage" src={props.leftLowerImage} />
+        <img className="thirdImage" src={props.rightLowerImage} />
       </div>
       <div className="campCard-right">
         <div className="campright-header">
@@ -21,26 +17,23 @@ export default function ArtCampCard(props) {
           <p className="camright-body__text">{props.body}</p>
         </div>
         <div className="campright-info">
-          <span>
-            <strong>Schedule</strong>
-          </span>
-          <span>
-            <strong>Artwithlarisse@gmail.com</strong>
-          </span>
+          <div className="campInfo-left">
+            <span>Class Schedule</span>
+            <span>Contact Us</span>
+          </div>
           <div className="campright-contacts">
-            <span />
             <ul>
               <li>
-                La Mesa <strong>(619) 857-1270</strong>
+                La Mesa <span className="hl">(619) 857-1270</span>
               </li>
               <li>
-                Santee <strong>(619) 855-2787</strong>
+                Santee <span className="hl">(619) 855-2787</span>
               </li>
               <li>
-                Kearny Mesa <strong>(619)-456-7506</strong>
+                Kearny Mesa <span className="hl">(619)-456-7506</span>
               </li>
               <li>
-                Bonita <strong>(619) 508-1299</strong>
+                Bonita <span className="hl">(619) 508-1299</span>
               </li>
             </ul>
           </div>

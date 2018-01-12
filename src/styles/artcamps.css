@@ -6,10 +6,12 @@
   background: white;
 }
 .artCamps-header {
-  height: 300px;
+  height: 411px;
   /* background-repeat: no-repeat; */
   width: 100%;
   display: flex;
+  background-size: cover;
+  background-position: center;
   justify-content: center;
   align-items: center;
   color: white;
@@ -23,8 +25,13 @@
   font-size: 1.5em;
 }
 .artCamps-body {
+  display: flex;
+  flex-direction: column;
   width: 100%;
   padding: 1em 0;
+}
+.artCampCard:nth-of-type(even) {
+  flex-direction: row-reverse;
 }
 @media screen and (max-width: 767px) {
   .artCamps-header__text {
