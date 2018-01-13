@@ -1,14 +1,14 @@
 .artCampCard {
   font-family: "Nexa";
   display: flex;
-  margin: 4em 10em 3em;
+  padding: 4em 6em;
 }
 .campCard-left {
   display: flex;
   flex-direction: column;
   width: 50%;
   height: 380px;
-  padding-left: 40px;
+  padding: 0 5em;
 }
 .firstImage {
   position: relative;
@@ -36,8 +36,7 @@
   width: 50%;
   height: 380px;
   box-sizing: border-box;
-  margin: 0 2em;
-  padding-left: 40px;
+  padding: 0 3em;
   color: black;
 }
 .campright-header {
