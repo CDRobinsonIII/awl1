@@ -1,7 +1,10 @@
 .artCampCard {
-  font-family: "Nexa";
+  font-family: 'Nexa';
   display: flex;
   padding: 4em 6em;
+}
+.artCampCard:nth-of-type(even) {
+  flex-direction: row-reverse;
 }
 .campCard-left {
   position: relative;
@@ -83,7 +86,7 @@
   font-weight: 600;
 }
 .campright-info li {
-  font-family: "Nexa";
+  font-family: 'Nexa';
   padding: 0.5em 0;
   font-size: 1em;
   color: #492649;

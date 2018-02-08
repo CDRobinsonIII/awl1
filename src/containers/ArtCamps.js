@@ -1,27 +1,62 @@
-import React, { Component } from "react";
-import "../styles/artcamps.css";
-import ArtCampCard from "../components/ArtCampCard";
-import Pic1 from "../assets/Art Camp Project_01.jpg";
-import Pic2 from "../assets/Art Camp Project_13.jpg";
-import Pic3 from "../assets/Student Creating Art_03.jpg";
-import Pic4 from "../assets/Student Creating Art_02.jpg";
-import Pic5 from "../assets/Art Camp Project_09.jpg";
-import Pic6 from "../assets/Art Camp Project_08.jpg";
-import Pic7 from "../assets/Art Camp Project_07.JPG";
-import Pic8 from "../assets/Art Camp Project_14.jpg";
-import Pic9 from "../assets/Art Camp Project_04.jpg";
-import Pic10 from "../assets/Art Camp Project_12.jpeg";
-import Pic11 from "../assets/Art Camp Project_05.jpg";
-import Pic12 from "../assets/Art Camp Project_06.jpg";
+import React, { Component } from 'react';
+import styled from 'styled-components';
+import ArtCampCard from '../components/ArtCampCard';
+import bonita from '../assets/bonita.png';
+import Pic1 from '../assets/Art Camp Project_01.jpg';
+import Pic2 from '../assets/Art Camp Project_13.jpg';
+import Pic3 from '../assets/Student Creating Art_03.jpg';
+import Pic4 from '../assets/Student Creating Art_02.jpg';
+import Pic5 from '../assets/Art Camp Project_09.jpg';
+import Pic6 from '../assets/Art Camp Project_08.jpg';
+import Pic7 from '../assets/Art Camp Project_07.JPG';
+import Pic8 from '../assets/Art Camp Project_14.jpg';
+import Pic9 from '../assets/Art Camp Project_04.jpg';
+import Pic10 from '../assets/Art Camp Project_12.jpeg';
+import Pic11 from '../assets/Art Camp Project_05.jpg';
+import Pic12 from '../assets/Art Camp Project_06.jpg';
 
+const ArtCampWrapper = styled.div`
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background: white;
+`;
+
+const ArtCampsHeader = styled.div`
+  height: 411px;
+  width: 100%;
+  display: flex;
+  background-size: cover;
+  background-position: center;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-family: 'AvantGardeMdITC';
+  text-transform: capitalize;
+  font-size: 3em;
+  background-image: url(${bonita});
+`;
+
+const ArtCampH1 = styled.h1`
+  -webkit-font-smoothing: antialiased;
+  font-size: 1.5em;
+`;
+
+const ArtCampBody = styled.section`
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 1em 0;
+`;
 class ArtCamps extends Component {
   render() {
     return (
-      <section className="ArtCamps">
-        <div className="artCamps-header">
-          <h1 className="artCamps-header__text">Art camps</h1>
-        </div>
-        <div className="artCamps-body">
+      <ArtCampWrapper>
+        <ArtCampsHeader>
+          <ArtCampH1>Art camps</ArtCampH1>
+        </ArtCampsHeader>
+        <ArtCampBody>
           <ArtCampCard
             leftUpperimage={Pic3}
             leftLowerImage={Pic2}
@@ -50,8 +85,8 @@ class ArtCamps extends Component {
             header="One Day"
             body="Learn how to draw fine art and create new crafts everyday. The camp are for 4 days (no camp on Tuesdays). The fun begins at 10am and lasts until 1pm. We will still have afternoon classes during camp weeks. All the supplies are included as well as snacks. The cost is 150 for 4 days. Each art camp is based on availability, and you must reserve your spot with a $50 art camp deposit. Please email or call us for details."
           />
-        </div>
-      </section>
+        </ArtCampBody>
+      </ArtCampWrapper>
     );
   }
 }
