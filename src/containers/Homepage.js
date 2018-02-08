@@ -10,8 +10,8 @@ import secondBg from '../assets/secondary-background-tile.png';
 import bonita from '../assets/bonita.png';
 import santee from '../assets/santee.png';
 import lamesa from '../assets/lamesa.png';
+
 import Slider from '../components/Carousel';
-import Slider1 from '../components/Slider';
 
 const Home = styled.div`
   width: 100%;
@@ -135,7 +135,7 @@ class HomePage extends Component {
             <HeroA href="">View upcoming classes</HeroA>
           </HeroTextWrapper>
         </HomeBanner>
-        {/* <Slider /> */}
+        <Slider />
         <HomeMission>
           <CatImage src={cats} />
           <HomeMissionP>
