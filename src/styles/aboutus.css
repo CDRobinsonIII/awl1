@@ -7,16 +7,15 @@
 }
 .about-header {
   height: 300px;
-  /* background-repeat: no-repeat; */
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   color: white;
-  font-family: "AvantGardeMdITC";
+  font-family: 'AvantGardeMdITC';
   text-transform: capitalize;
   font-size: 3em;
-  background-image: url("../assets/bonita.png");
+  background-image: url('../assets/bonita.png');
 }
 .about-mission-wrapper {
   display: flex;
@@ -26,7 +25,7 @@
 }
 .about-mission-wrapper h2 {
   letter-spacing: 2px;
-  font-family: "Nexa";
+  font-family: 'Nexa';
   padding: 3em 0;
   -webkit-font-smoothing: antialiased;
   text-transform: uppercase;
@@ -34,7 +33,7 @@
   font-weight: 600;
 }
 .about-mission-wrapper p {
-  font-family: "Nexa";
+  font-family: 'Nexa';
   line-height: 2.5em;
   text-align: center;
   margin: 0 2.5em;
@@ -51,7 +50,7 @@
   padding-bottom: 2.5em;
 }
 .instructors-block h2 {
-  font-family: "Nexa";
+  font-family: 'Nexa';
   font-size: 2em;
   text-transform: capitalize;
   padding: 0.8em 0;
@@ -71,13 +70,13 @@
 }
 .intsructors-block__trio h2 {
   padding: 1em 0 0.5em 0;
-  font-family: "Nexa";
+  font-family: 'Nexa';
   -webkit-font-smoothing: antialiased;
   font-size: 1.5em;
 }
 .intsructors-block__trio span {
   letter-spacing: 2px;
-  font-family: "Nexa";
+  font-family: 'Nexa';
   text-transform: uppercase;
   font-size: 0.5em;
   font-weight: 700;
@@ -93,7 +92,7 @@
   padding-top: 4em;
 }
 .giving-block h2 {
-  font-family: "Nexa";
+  font-family: 'Nexa';
   font-size: 2em;
 }
 .giving-body {
@@ -112,14 +111,14 @@
 }
 .community-wrapper h3,
 .donations-wrapper h3 {
-  font-family: "Nexa";
+  font-family: 'Nexa';
   -webkit-font-smoothing: antialiased;
   font-size: 1.5em;
   padding: 0 0 1em 0;
 }
 .community-wrapper p,
 .donations-wrapper p {
-  font-family: "Nexa";
+  font-family: 'Nexa';
   -webkit-font-smoothing: antialiased;
   line-height: 2em;
   text-align: -webkit-center;
