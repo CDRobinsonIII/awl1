@@ -13,6 +13,11 @@ import lamesa from '../assets/lamesa.png';
 import Slider from '../components/Carousel';
 import Slider1 from '../components/Slider';
 
+const Home = styled.div`
+  width: 100%;
+  height: 100%;
+`;
+
 const HomeBanner = styled.section`
   height: 411px;
   width: 100%;
@@ -120,7 +125,7 @@ const LocationRow = styled.div`
 class HomePage extends Component {
   render() {
     return (
-      <div className="Home">
+      <Home>
         <HomeBanner>
           <HeroTextWrapper>
             <HeroP>art classes start now</HeroP>
@@ -179,7 +184,7 @@ class HomePage extends Component {
             />
           </LocationRow>
         </HomeLocation>
-      </div>
+      </Home>
     );
   }
 }
