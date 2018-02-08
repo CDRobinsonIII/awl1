@@ -1,67 +1,21 @@
 .homeBanner {
-  height: 411px;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  color: white;
-  font-family: "AvantGardeMdITC";
-  background-image: url("../assets/hero-home-1.jpg");
 }
 .homeHero-Wrapper {
-  margin: 5em;
 }
 .homeHero-Wrapper p {
-  -webkit-font-smoothing: antialiased;
-  font-family: Nexa, sans-serif;
-  text-transform: uppercase;
-  margin-bottom: 35px;
-  letter-spacing: 0.08em;
 }
 .homeHero-Wrapper h1 {
-  font-family: AvantGardeMdITC, helvetica;
-  font-size: 4.6em;
-  line-height: 0.9;
-  margin-bottom: 30px;
-  text-transform: capitalize;
 }
 .homeHero-Wrapper a {
-  text-decoration: none;
-  color: white;
-  font-family: Playfair Display, serif;
-  font-style: italic;
-  -webkit-font-smoothing: antialiased;
-  font-size: 1.2em;
-  letter-spacing: 0.02em;
-  margin-left: 5px;
 }
 .homeMission {
-  background-image: url("../assets/mission-block-background.png");
-  height: 479px;
-  background-repeat: no-repeat;
-  margin-bottom: 150px;
 }
 .homeMission p {
-  position: relative;
-  font-family: Playfair Display, serif;
-  -webkit-font-smoothing: antialiased;
-  width: 34%;
-  top: -158%;
-  right: -55%;
-  color: #fff;
-  font-size: 1.5em;
-  line-height: 1.8em;
 }
 .homeMission span {
-  position: absolute;
-  font-family: Nexa, sans-serif;
-  font-size: 0.6em;
-  text-transform: uppercase;
-  font-weight: 700;
-  transform: translateX(-130%);
-  letter-spacing: 0.04em;
 }
 .secondary-Spacer {
-  background-image: url("../assets/location-block-background.png");
+  background-image: url('../assets/location-block-background.png');
   height: 360px;
   background-size: cover;
   background-position: 50%;
@@ -69,7 +23,7 @@
   font-size: 0;
 }
 .homeLocation {
-  background-image: url("../assets/secondary-background-tile.png");
+  background-image: url('../assets/secondary-background-tile.png');
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: center;
