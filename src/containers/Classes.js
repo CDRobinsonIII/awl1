@@ -157,7 +157,6 @@ const ClassesColP = styled.p`
   font-weight: 800;
   text-align: -webkit-left;
   font-family: 'Playfair Display';
-  margin-bottom: 1em;
 `;
 const AdultSchedule = styled.div`
   width: 100%;
@@ -173,6 +172,7 @@ const AdultScheduleBlock = styled.div`
   justify-content: center;
   width: 50%;
   line-height: 30px;
+  margin: ${props => props.margin};
 `;
 
 const AdultCity = styled.strong`
@@ -269,7 +269,7 @@ class Classes extends Component {
                     <i style={style} className="far fa-lg fa-clock" />6-8:30PM
                   </AdultTime>
                 </AdultScheduleBlock>
-                <AdultScheduleBlock>
+                <AdultScheduleBlock margin="7px 0 0 50px">
                   <AdultCity margin="-6px">Bonita</AdultCity>
                   <AdultDay>
                     <i style={style} className="fas fa-lg fa-calendar-alt" />Wednesday
