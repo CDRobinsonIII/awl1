@@ -4,6 +4,10 @@ import hero from '../assets/hero-art-classes-1.png';
 import orangeBg from '../assets/ArtwithLarisseOrange.jpg';
 import { withRouter, Link } from 'react-router-dom';
 
+let style = {
+  width: '25px',
+  height: '25px'
+};
 const ClassesWrapper = styled.div`
   display: flex;
   justify-content: center;
@@ -155,6 +159,45 @@ const ClassesColP = styled.p`
   font-family: 'Playfair Display';
   margin-bottom: 1em;
 `;
+const AdultSchedule = styled.div`
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
+
+const AdultScheduleBlock = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start;
+  justify-content: center;
+  width: 50%;
+  line-height: 30px;
+`;
+
+const AdultCity = styled.strong`
+  font-family: 'AvantGardeMdITC';
+  margin-top: ${props => props.margin};
+  font-size: 20px;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+`;
+const AdultDay = styled.span`
+  font-family: 'Nexa';
+  line-height: 17px;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+  display: flex;
+`;
+const AdultTime = styled.span`
+  font-family: 'Nexa';
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 1px;
+`;
 
 const AdultButton = styled.button`
   background-color: #fff;
@@ -180,8 +223,10 @@ const CharterLi = styled.li`
   padding: 0.5em;
   width: 100%;
   text-align: -webkit-left;
-  font-family: 'Nexa';
+  font-family: 'Playfair Display';
 `;
+
+const Calendar = styled.i``;
 class Classes extends Component {
   render() {
     return (
@@ -213,6 +258,27 @@ class Classes extends Component {
               <ClassesBodyBoxes background="#613b61">
                 <ClassesColH3>Adult art classes</ClassesColH3>
               </ClassesBodyBoxes>
+              <AdultSchedule>
+                <AdultScheduleBlock>
+                  <AdultCity margin="10px">La Mesa</AdultCity>
+                  <AdultDay>
+                    <i style={style} className="fas fa-lg fa-calendar-alt" />
+                    Every other wednesday
+                  </AdultDay>
+                  <AdultTime>
+                    <i style={style} className="far fa-lg fa-clock" />6-8:30PM
+                  </AdultTime>
+                </AdultScheduleBlock>
+                <AdultScheduleBlock>
+                  <AdultCity margin="-6px">Bonita</AdultCity>
+                  <AdultDay>
+                    <i style={style} className="fas fa-lg fa-calendar-alt" />Wednesday
+                  </AdultDay>
+                  <AdultTime>
+                    <i style={style} className="far fa-lg fa-clock" />11-2PM
+                  </AdultTime>
+                </AdultScheduleBlock>
+              </AdultSchedule>
               <ClassesColP>
                 We welcome all of our adults to attend during our regular
                 classes with children, but we also offer a select few classes
