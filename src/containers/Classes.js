@@ -6,6 +6,11 @@ import { withRouter, Link } from 'react-router-dom';
 
 let style = {
   width: '25px',
+  height: '25px',
+  margin: '0 8px 0 0'
+};
+let style1 = {
+  width: '25px',
   height: '25px'
 };
 const ClassesWrapper = styled.div`
@@ -275,7 +280,7 @@ class Classes extends Component {
                     <i style={style} className="fas fa-lg fa-calendar-alt" />Wednesday
                   </AdultDay>
                   <AdultTime>
-                    <i style={style} className="far fa-lg fa-clock" />11-2PM
+                    <i style={style1} className="far fa-lg fa-clock" />11-2PM
                   </AdultTime>
                 </AdultScheduleBlock>
               </AdultSchedule>
