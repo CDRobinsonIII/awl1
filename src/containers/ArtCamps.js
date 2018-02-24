@@ -2,18 +2,18 @@ import React, { Component } from 'react';
 import styled from 'styled-components';
 import ArtCampCard from '../components/ArtCampCard';
 import bonita from '../assets/bonita.png';
-import Pic1 from '../assets/Art Camp Project_01.jpg';
-import Pic2 from '../assets/Art Camp Project_13.jpg';
+import Pic1 from '../assets/ACP1.jpg';
+import Pic2 from '../assets/ACP13.jpg';
 import Pic3 from '../assets/Student Creating Art_03.jpg';
 import Pic4 from '../assets/Student Creating Art_02.jpg';
-import Pic5 from '../assets/Art Camp Project_09.jpg';
-import Pic6 from '../assets/Art Camp Project_08.jpg';
-import Pic7 from '../assets/Art Camp Project_07.JPG';
-import Pic8 from '../assets/Art Camp Project_14.jpg';
-import Pic9 from '../assets/Art Camp Project_04.jpg';
-import Pic10 from '../assets/Art Camp Project_12.jpeg';
-import Pic11 from '../assets/Art Camp Project_05.jpg';
-import Pic12 from '../assets/Art Camp Project_06.jpg';
+import Pic5 from '../assets/ACP9.jpg';
+import Pic6 from '../assets/ACP8.jpg';
+import Pic7 from '../assets/ACP7.JPG';
+import Pic8 from '../assets/ACP14.jpg';
+import Pic9 from '../assets/ACP4.jpg';
+import Pic10 from '../assets/ACP12.jpeg';
+import Pic11 from '../assets/ACP5.jpg';
+import Pic12 from '../assets/ACP6.jpg';
 
 const ArtCampWrapper = styled.div`
   display: flex;

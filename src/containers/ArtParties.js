@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 import PartyCard from '../components/PartyCard';
-import Pic1 from '../assets/background-tile.jpg';
 import Pic2 from '../assets/secondary-background-tile.png';
 import Pic3 from '../assets/santee.png';
 import bonita from '../assets/bonita.png';

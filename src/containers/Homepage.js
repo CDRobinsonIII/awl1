@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 import LocationCard from '../components/LocationCard';
+import Slider from '../components/Slider.js';
 
 import hero from '../assets/hero-home-1.jpg';
 import missionBlock from '../assets/mission-block-background.png';
@@ -10,8 +11,6 @@ import secondBg from '../assets/secondary-background-tile.png';
 import bonita from '../assets/bonita.png';
 import santee from '../assets/santee.png';
 import lamesa from '../assets/lamesa.png';
-
-import Slider from '../components/Carousel';
 
 const Home = styled.div`
   width: 100%;
@@ -136,6 +135,7 @@ class HomePage extends Component {
           </HeroTextWrapper>
         </HomeBanner>
         <Slider />
+
         <HomeMission>
           <CatImage src={cats} />
           <HomeMissionP>

@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import styled from 'styled-components';
 import hero from '../assets/hero-art-classes-1.png';
 import orangeBg from '../assets/ArtwithLarisseOrange.jpg';
-import { withRouter, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 let style = {
   width: '25px',
@@ -127,16 +127,6 @@ const ClassesCol = styled.div`
   margin: 1em;
 `;
 
-const ClassesColSpan = styled.span`
-  font-family: 'Nexa';
-  padding: 0.5em;
-  width: 100%;
-  text-align: -webkit-left;
-`;
-const ClassesColStrong = styled.strong`
-  font-weight: 900;
-`;
-
 const ClassesColH3 = styled.h3`
   font-family: 'Nexa';
   font-size: 1.5em;
@@ -231,7 +221,6 @@ const CharterLi = styled.li`
   font-family: 'Playfair Display';
 `;
 
-const Calendar = styled.i``;
 class Classes extends Component {
   render() {
     return (
