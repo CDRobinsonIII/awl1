@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
 import styled from 'styled-components';
-import SlideOne from './slides/slide1';
-import SlideTwo from './slides/slide2';
-import SlideThree from './slides/slide3';
+import Slide from './Slide';
 import LeftArrow from './LeftArrow';
 import RightArrow from './RightArrow';
 
-const SliderWrapper = styled.div`
+const SliderWrapper = styled.ul`
+  display: flex;
   background: white;
   position: relative;
   width: 100%;
@@ -16,30 +16,38 @@ const SliderWrapper = styled.div`
   white-space: nowrap;
 `;
 
-export default class Slider extends Component {
+class Slider extends Component {
   constructor(props) {
     super(props);
-    this.state = {
-      slideCount: 1
-    };
-    this.nextSlide = this.nextSlide.bind(this);
-    this.previousSlide = this.previousSlide.bind(this);
+    this.renderPictures = this.renderPictures.bind(this);
   }
-  nextSlide() {
-    this.setState({ slideCount: this.state.slideCount + 1 });
-  }
-  previousSlide() {
-    this.setState({ slideCount: this.state.slideCount - 1 });
-  }
+  renderPictures = () => {
+    return this.props.pictures.map(picture => {
+      return (
+        <Slide image={picture.title} key={picture.title}>
+          {picture.title}
+        </Slide>
+      );
+    });
+  };
   render() {
+    if (!this.props.pictures) {
+      return <div>Getting pictures...</div>;
+    }
     return (
       <SliderWrapper>
-        {this.state.slideCount === 1 ? <SlideOne /> : null}
-        {this.state.slideCount === 2 ? <SlideTwo /> : null}
-        {this.state.slideCount === 3 ? <SlideThree /> : null}
-        <RightArrow nextSlide={this.nextSlide} />
-        <LeftArrow previousSlide={this.previousSlide} />
+        {this.renderPictures()}
+        <RightArrow />
+        <LeftArrow />
       </SliderWrapper>
     );
   }
 }
+
+function mapStateToProps(state) {
+  return {
+    pictures: state.pictures
+  };
+}
+
+export default connect(mapStateToProps)(Slider);
