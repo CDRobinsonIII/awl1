@@ -4,5 +4,5 @@ import sliderReducer from './sliderReducer';
 
 export default combineReducers({
   header: headerReducer,
-  pictures: sliderReducer
+  slider: sliderReducer
 });

@@ -7,13 +7,18 @@ const PreviousArrow = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  position: absolute;
-  z-index: 99;
-  left: 0;
-  top: 50%;
+  background: transparent;
   border-radius: 50%;
+  cursor: pointer;
+  transition: transform ease-in 0.1s;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  z-index: 999;
+  color: #fff;
   &:hover {
-    cursor: pointer;
+    transition: transform ease-in 0.1s;
+    transform: scale(1.1);
   }
 `;
 const LeftArrow = props => {

@@ -2,18 +2,23 @@ import React from 'react';
 import styled from 'styled-components';
 
 const NextArrow = styled.div`
-  width: 50px;
   height: 50px;
+  width: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
+  background: transparent;
+  border-radius: 50%;
+  cursor: pointer;
   position: absolute;
-  z-index: 99;
   top: 50%;
   right: 0;
-  border-radius: 50%;
+  z-index: 999;
+  color: #fff;
+  transition: transform ease-in 0.1s;
   &:hover {
-    cursor: pointer;
+    transition: transform ease-in 0.1s;
+    transform: scale(1.1);
   }
 `;
 const RightArrow = props => {
