@@ -1,18 +1,12 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import {
-  getSliderImages,
-  setTranslateValue,
-  setIndex,
-  toggleAutoplay
-} from '../actions/slider';
-import { bindActionCreators } from 'redux';
+import * as actions from '../actions/slider';
 import styled from 'styled-components';
 
-import Slide from './Slide';
-import Dots from './Dots';
-import LeftArrow from './LeftArrow';
-import RightArrow from './RightArrow';
+import Slide from '../components/Slide';
+import Dots from '../components/Dots';
+import LeftArrow from '../components/LeftArrow';
+import RightArrow from '../components/RightArrow';
 
 const Slider = styled.ul`
   position: relative;
@@ -113,16 +107,4 @@ const mapStateToProps = ({ slider }) => {
   };
 };
 
-const mapDispatchToProps = dispatch => {
-  return bindActionCreators(
-    {
-      getSliderImages: getSliderImages,
-      setTranslateValue: setTranslateValue,
-      setIndex: setIndex,
-      toggleAutoplay: toggleAutoplay
-    },
-    dispatch
-  );
-};
-
-export default connect(mapStateToProps, mapDispatchToProps)(SliderComponent);
+export default connect(mapStateToProps, actions)(SliderComponent);

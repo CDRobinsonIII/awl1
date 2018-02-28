@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
-import LocationCard from '../components/LocationCard';
-import Slider from '../components/Slider.js';
+import LocationCard from './LocationCard';
+import Slider from '../containers/Slider.js';
 
 import hero from '../assets/hero-home-1.jpg';
 import missionBlock from '../assets/mission-block-background.png';

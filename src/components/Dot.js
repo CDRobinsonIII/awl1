@@ -8,6 +8,10 @@ const Dot = styled.div`
   margin-right: 5px;
   cursor: pointer;
   border-radius: 50%;
+
+  &.active {
+    background: #2f2f2f;
+  }
 `;
 
 const dot = ({ id, active, dotClick }) => {

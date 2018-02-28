@@ -1,15 +1,15 @@
-import React, { Component } from "react";
-import { Route, Switch } from "react-router-dom";
-import Container from "components/Container";
-import Header from "components/Header";
-import Footer from "components/Footer";
-import Homepage from "../containers/Homepage";
-import ArtCamp from "../containers/ArtCamps";
-import ArtParties from "../containers/ArtParties";
-import Tuition from "../containers/Tuition";
-import Location from "../containers/Locations";
-import Classes from "../containers/Classes";
-import About from "../containers/AboutUs";
+import React, { Component } from 'react';
+import { Route, Switch } from 'react-router-dom';
+import Container from './Container';
+import Header from '../containers/Header';
+import Footer from './Footer';
+import Homepage from './Homepage';
+import ArtCamp from './ArtCamps';
+import ArtParties from './ArtParties';
+import Tuition from './Tuition';
+import Location from './Locations';
+import Classes from './Classes';
+import About from './AboutUs';
 
 class App extends Component {
   render() {
