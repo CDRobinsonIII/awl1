@@ -1,4 +1,5 @@
 import React from 'react';
+import styled from 'styled-components';
 
 const Slide = ({ pic }) => {
   const styles = {
@@ -6,8 +7,8 @@ const Slide = ({ pic }) => {
     backgroundSize: 'cover',
     backgroundRepeat: 'no-repeat',
     backgroundPosition: '50% 60%',
-    height: '65vh',
-    width: '100%',
+    height: '411px',
+    width: '25%',
     display: 'inline-block'
   };
   return <li className="slide" style={styles} />;

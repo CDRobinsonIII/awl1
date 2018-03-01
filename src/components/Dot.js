@@ -4,10 +4,11 @@ import styled from 'styled-components';
 const Dot = styled.div`
   background: #fff;
   display: inline-block;
-  padding: 10px;
+  padding: 5px;
   margin-right: 5px;
   cursor: pointer;
   border-radius: 50%;
+  margin: 0 5px;
 
   &.active {
     background: #2f2f2f;

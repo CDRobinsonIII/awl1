@@ -23,7 +23,7 @@ const PreviousArrow = styled.div`
 `;
 const LeftArrow = props => {
   return (
-    <PreviousArrow onClick={props.previousSlide}>
+    <PreviousArrow onClick={props.prevSlide}>
       <i className="fa fa-arrow-left fa-2x" aria-hidden="true" />
     </PreviousArrow>
   );

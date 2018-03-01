@@ -8,7 +8,7 @@ import Dots from '../components/Dots';
 import LeftArrow from '../components/LeftArrow';
 import RightArrow from '../components/RightArrow';
 
-const Slider = styled.ul`
+const Slider = styled.div`
   position: relative;
   width: 100%;
   margin: 0 auto;
@@ -17,7 +17,7 @@ const Slider = styled.ul`
   white-space: nowrap;
 `;
 
-const SliderWrapper = styled.div`
+const SliderWrapper = styled.ul`
   position: relative;
   min-height: 500px;
   width: 100%;
