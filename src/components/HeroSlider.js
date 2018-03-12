@@ -29,8 +29,7 @@ export default class HeroSlider extends Component {
     return (
       <Hero>
         <HeroSliderWrapper>
-          {this.state.slideCount === 1 ? <Slide /> : null}
-          {this.state.slideCount === 2 ? <Slide2 /> : null}
+          {this.state.slideCount === 1 ? <Slide2 /> : null}
         </HeroSliderWrapper>
       </Hero>
     );
