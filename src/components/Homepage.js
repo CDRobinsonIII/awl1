@@ -60,7 +60,6 @@ class HomePage extends Component {
       <Home>
         {/* <Hero /> */}
         <HeroSlider />
-        <Slider />
         <Space />
         <HomeLocation>
           <LocationSpan>Our Locations</LocationSpan>
