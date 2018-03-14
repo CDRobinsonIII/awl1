@@ -58,7 +58,6 @@ class HomePage extends Component {
   render() {
     return (
       <Home>
-        {/* <Hero /> */}
         <HeroSlider />
         <Space />
         <HomeLocation>
