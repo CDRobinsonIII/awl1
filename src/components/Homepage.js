@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { withRouter } from 'react-router-dom';
 import styled from 'styled-components';
 import LocationCard from './LocationCard';
-import Slider from '../containers/Slider.js';
 import HeroSlider from './HeroSlider.js';
 import hero from '../assets/hero-home-1.jpg';
 import locationBg from '../assets/location-block-background.png';
