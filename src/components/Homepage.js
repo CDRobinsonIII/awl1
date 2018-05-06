@@ -3,7 +3,6 @@ import { withRouter } from 'react-router-dom';
 import styled from 'styled-components';
 import LocationCard from './LocationCard';
 import HeroSlider from './HeroSlider.js';
-import hero from '../assets/hero-home-1.jpg';
 import locationBg from '../assets/location-block-background.png';
 import secondBg from '../assets/secondary-background-tile.png';
 import bonita from '../assets/bonita.png';
