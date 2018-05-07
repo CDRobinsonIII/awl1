@@ -8,7 +8,6 @@ import secondBg from '../assets/secondary-background-tile.png';
 import bonita from '../assets/bonita.png';
 import santee from '../assets/santee.png';
 import lamesa from '../assets/lamesa.png';
-import Hero from './HeroSlider';
 
 const Home = styled.div`
   width: 100%;
